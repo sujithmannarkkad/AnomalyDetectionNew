@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Outlier Detection</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Outlier Detection</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post" >
+    	 
+        SLA: <input type="text" name="(AO)Percentage SLAs Met" placeholder="(AO)Percentage SLAs Met" required="required" value="{{ request.form['(AO)Percentage SLAs Met'] }}" /> 
+		Ageing: <input type="text" name="Ageing" placeholder="Ageing" required="required"
+value="{{ request.form['Ageing'] }}"		/>
+		AREI: <input type="text" name="Average Resolution Effort - Incidents" placeholder="Average Resolution Effort - Incidents" required="required" 
+		value="{{ request.form['Average Resolution Effort - Incidents'] }}"/>
+		AREP: <input type="text" name="Average Resolution Effort - Problems" placeholder="Average Resolution Effort - Problems" required="required"
+value="{{ request.form['Average Resolution Effort - Problems'] }}"		/>
+		BPEI: <input type="text" name="Backlog Processing Efficiency - Incidents" placeholder="Backlog Processing Efficiency - Incidents" required="required" 
+		value="{{ request.form['Backlog Processing Efficiency - Incidents'] }}"/>
+		BPEP: <input type="text" name="Backlog Processing Efficiency - Problems" placeholder="Backlog Processing Efficiency - Problems" required="required" 
+		value="{{ request.form['Backlog Processing Efficiency - Problems'] }}"/>
+		DD: <input type="text" name="Delivered Defects" placeholder="Delivered Defects" required="required" 
+		value="{{ request.form['Delivered Defects'] }}"/>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   
+
+ </div>
+<div>
+{{ prediction_text }}
+</div>
+
+</body>
+</html>

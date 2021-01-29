@@ -1,0 +1,2284 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://hpdpmetricsuat.ciostage.accenture.com/Manage/MetricSubmission -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Metric Submission - MyWizard</title>
+    <link rel="icon" href="https://hpdpmetricsuat.ciostage.accenture.com/favicon.ico" type="image/x-icon">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <!--Below Meta tag is for Azure AD-->
+    <!--<meta http-equiv="Content-Type" content="text/html">-->
+    <!--<base href="/">--><base href=".">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+    <link href="{{ url_for('static',filename='Metric Submission - MyWizard_files/bundleStyles.css')}}" rel="stylesheet">
+    <link rel="icon" href="https://hpdpmetricsuat.ciostage.accenture.com/assets/favicon.ico">
+	<!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+<style>
+    /* body {
+    font-family:helvetica, sans-serif;
+    font-size:.7em;
+}
+p {
+    margin:.5em 1em;
+} */
+
+</style></head>
+<body style="overflow-y: scroll;" data-new-gr-c-s-check-loaded="14.990.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+
+    <mass-ui ng-version="4.4.6">
+<div class="LoaderPopup" hidden="">
+    <div class="Loadercontent">
+        <img src="./Metric Submission - MyWizard_files/imge_loading.gif">
+
+    </div>
+</div>
+<div class="wrapper">
+    <div class="wrap">
+      
+        
+      
+
+        <div class="content-wrap container-fluid" data-ui-view="" id="mainContent">
+            <!----><div class="tile-wrap" id="mainTile">
+                <router-outlet>
+                </router-outlet><metric-submission-ui _nghost-c0="">
+<div _ngcontent-c0="" class="row page-title">
+    <div _ngcontent-c0="" class="col-xs-8" id="main-1" role="main">
+        
+        
+        <h1 _ngcontent-c0="" class="font-sizing-for-heading">Metric Submission</h1>
+        <button _ngcontent-c0="" aria-expanded="false" aria-haspopup="true" aria-label="Help (open a popup)" class="help_modal" data-target="#cmsHelpModal" data-toggle="modal" role="button" title="Help (open a popup)"></button>
+        <label _ngcontent-c0="" class="submissionHeaderFont">All due dates are converted to your workstation’s time zone</label>
+    </div>
+    
+</div>
+
+<div _ngcontent-c0="" class="row">
+
+    <!---->
+    
+    <!---->
+        <!----><div _ngcontent-c0="" class="mainContentConatiner col-sm-12 col-xs-12 col-lg-12" role="main">
+
+
+        <div _ngcontent-c0="" class="row statusBar">
+            <div _ngcontent-c0="" class="col-xs-12 col-sm-8 button_wrap">
+                <button _ngcontent-c0="" aria-expanded="true" aria-haspopup="false" aria-label="Collapse/Expand All Business Processes" class="btn btn-primary cms-tms-collapse expandCollapseall" href="javascript:;" role="button">Collapse All</button>
+                <!----> 
+                <!---->
+
+                </div>
+                <div _ngcontent-c0="" class="col-xs-12 col-sm-4 pull-right status_wrap">
+
+                    <div _ngcontent-c0="" class="pull-right">
+
+
+
+                        <div _ngcontent-c0="">
+                            <button _ngcontent-c0="" aria-controls="reportedPeriod" aria-expanded="false" aria-label="Hide the reporting period calender" class="pull-right status-period-toggle collapsed" data-target="#reportedPeriod" data-toggle="collapse" id="btnReporting" type="button">Reporting Period <span _ngcontent-c0="" class="glyphicon glyphicon-triangle-right"></span></button>
+                            <!---->
+                        </div>
+                        <input _ngcontent-c0="" id="statusasonPeriod" type="hidden" value="2017">
+
+                        <div _ngcontent-c0="" class="status-period handCursor" id="StatusAsOn" hidden="">
+                            <div _ngcontent-c0="" class="status-period-header handCursor">
+                                <div _ngcontent-c0="" aria-label="View the reporting period calender" aria-labelledby="btnReporting" class="status-period-month handCursor col-xs-12 collapse in status-period-new" role="region" style="">Reporting Period</div>
+                                <button _ngcontent-c0="" aria-label="Previous month" class="status-period-left statusperiod-prev" id="previousmonth" title="Previous month" type="button"><span _ngcontent-c0="" class="glyphicon glyphicon-menu-left period-left" style="color:#0094ff;"></span></button>
+                                
+                                <button _ngcontent-c0="" aria-label="Next month" class="status-period-right statusperiod-next" id="nextmonth" title="Next month" type="button"><span _ngcontent-c0="" class="glyphicon glyphicon-menu-right period-right" style="color:#0094ff;"></span></button>
+                                
+                            </div>
+                            <div _ngcontent-c0="" class="status-period-body handCursor">
+                                <ul _ngcontent-c0="">
+                                    <!----><li _ngcontent-c0="" class="reportingPeriodRow">
+                                        <span _ngcontent-c0="" class="status-period-month">Oct 2020</span>
+                                        <span _ngcontent-c0="" class="status-period-month">Weekly</span>
+                                        <span _ngcontent-c0="" class="status-period-month">31-Oct-2020</span>
+                                    </li><li _ngcontent-c0="" class="reportingPeriodRow">
+                                        <span _ngcontent-c0="" class="status-period-month">Nov 2020</span>
+                                        <span _ngcontent-c0="" class="status-period-month">Weekly</span>
+                                        <span _ngcontent-c0="" class="status-period-month">07-Nov-2020</span>
+                                    </li><li _ngcontent-c0="" class="reportingPeriodRow">
+                                        <span _ngcontent-c0="" class="status-period-month">Nov 2020</span>
+                                        <span _ngcontent-c0="" class="status-period-month">Weekly</span>
+                                        <span _ngcontent-c0="" class="status-period-month">14-Nov-2020</span>
+                                    </li><li _ngcontent-c0="" class="reportingPeriodRow">
+                                        <span _ngcontent-c0="" class="status-period-month">Nov 2020</span>
+                                        <span _ngcontent-c0="" class="status-period-month">Weekly</span>
+                                        <span _ngcontent-c0="" class="status-period-month">21-Nov-2020</span>
+                                    </li><li _ngcontent-c0="" class="reportingPeriodRow">
+                                        <span _ngcontent-c0="" class="status-period-month">Nov 2020</span>
+                                        <span _ngcontent-c0="" class="status-period-month">Weekly</span>
+                                        <span _ngcontent-c0="" class="status-period-month">28-Nov-2020</span>
+                                    </li><li _ngcontent-c0="" class="reportingPeriodRow">
+                                        <span _ngcontent-c0="" class="status-period-month">Nov 2020</span>
+                                        <span _ngcontent-c0="" class="status-period-month">Weekly</span>
+                                        <span _ngcontent-c0="" class="status-period-month">05-Dec-2020</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div _ngcontent-c0="" class="col-xs-12 col-sm-12">
+
+                    <div _ngcontent-c0="" class="col-xs-12 collapse in" id="reportedPeriod">
+                        <div _ngcontent-c0="" class="status-period-new">
+                            <button _ngcontent-c0="" aria-label="previous month" class="status-period-left reportArrow glyphicon glyphicon-menu-left" id="prevmonth" title="previous month" type="button"></button>
+
+                            <div _ngcontent-c0="" class="row status-period-row status-period-new-body">
+                                <!----><div _ngcontent-c0="" class="status-period-col reportCalcorr">
+                                    <!---->
+
+                                    <!----><a _ngcontent-c0="" class="status-period-tile" style="overflow-y:auto" tabindex="0">
+
+                                        <div _ngcontent-c0="" class="status-period-tile-title" title="01-Nov-2020">Oct  Month End</div>
+                                        <div _ngcontent-c0="" class="status-period-tile-content" title="01-Nov-2020">
+                                            <div _ngcontent-c0="">Due : 31-Oct-2020 12:00 PM </div>
+                                            <div _ngcontent-c0="" class="status-error">Partially Reported:<!----><span _ngcontent-c0="" class="status-error"> Late </span> 16 Dec 2020</div>
+                                        </div>
+                                    </a>
+
+                                </div><div _ngcontent-c0="" class="status-period-col reportCalcorr">
+                                    <!---->
+
+                                    <!----><a _ngcontent-c0="" class="status-period-tile" style="overflow-y:auto" tabindex="0">
+
+                                        <div _ngcontent-c0="" class="status-period-tile-title" title="08-Nov-2020">Nov Week 1 </div>
+                                        <div _ngcontent-c0="" class="status-period-tile-content" title="08-Nov-2020">
+                                            <div _ngcontent-c0="">Due : 07-Nov-2020 12:00 PM </div>
+                                            <div _ngcontent-c0="" class="status-error">Partially Reported:<!----> 6 Nov 2020</div>
+                                        </div>
+                                    </a>
+
+                                </div><div _ngcontent-c0="" class="status-period-col reportCalcorr">
+                                    <!---->
+
+                                    <!----><a _ngcontent-c0="" class="status-period-tile status-period-selected" style="overflow-y:auto" tabindex="0">
+
+                                        <div _ngcontent-c0="" class="status-period-tile-title" title="15-Nov-2020">Nov Week 2  - Mid Month</div>
+                                        <div _ngcontent-c0="" class="status-period-tile-content" title="15-Nov-2020">
+                                            <div _ngcontent-c0="">Due : 14-Nov-2020 12:00 PM </div>
+                                            <div _ngcontent-c0="" class="status-error">Partially Reported:<!----><span _ngcontent-c0="" class="status-error"> Late </span> 20 Nov 2020</div>
+                                        </div>
+                                    </a>
+
+                                </div><div _ngcontent-c0="" class="status-period-col reportCalcorr">
+                                    <!---->
+
+                                    <!----><a _ngcontent-c0="" class="status-period-tile" style="overflow-y:auto" tabindex="0">
+
+                                        <div _ngcontent-c0="" class="status-period-tile-title" title="22-Nov-2020">Nov Week 3 </div>
+                                        <div _ngcontent-c0="" class="status-period-tile-content" title="22-Nov-2020">
+                                            <div _ngcontent-c0="">Due : 21-Nov-2020 12:00 PM </div>
+                                            <div _ngcontent-c0="" class="status-error">Partially Reported:<!----> 20 Nov 2020</div>
+                                        </div>
+                                    </a>
+
+                                </div><div _ngcontent-c0="" class="status-period-col reportCalcorr">
+                                    <!---->
+
+                                    <!----><a _ngcontent-c0="" class="status-period-tile" style="overflow-y:auto" tabindex="0">
+
+                                        <div _ngcontent-c0="" class="status-period-tile-title" title="29-Nov-2020">Nov Week 4 </div>
+                                        <div _ngcontent-c0="" class="status-period-tile-content" title="29-Nov-2020">
+                                            <div _ngcontent-c0="">Due : 28-Nov-2020 12:00 PM </div>
+                                            <div _ngcontent-c0="" class="status-error">Partially Reported:<!----> 27 Nov 2020</div>
+                                        </div>
+                                    </a>
+
+                                </div><div _ngcontent-c0="" class="status-period-col reportCalcorr">
+                                    <!---->
+
+                                    <!----><a _ngcontent-c0="" class="status-period-tile" style="overflow-y:auto" tabindex="0">
+
+                                        <div _ngcontent-c0="" class="status-period-tile-title" title="06-Dec-2020">Nov  Month End</div>
+                                        <div _ngcontent-c0="" class="status-period-tile-content" title="06-Dec-2020">
+                                            <div _ngcontent-c0="">Due : 05-Dec-2020 12:00 PM </div>
+                                            <div _ngcontent-c0="" class="status-period-submitted"><!----> </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                            <button _ngcontent-c0="" aria-label="next month" class="status-period-right reportArrow glyphicon glyphicon-menu-right" id="nxtmonth"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div _ngcontent-c0="" class="row framecontainer">
+                <div _ngcontent-c0="" class="frame">
+                    <div _ngcontent-c0="" class="leftFilters overviewFilter" hidden="">
+                        <div _ngcontent-c0="" class="leftfilterHeader">Refine By <span _ngcontent-c0="" class="carat-right handCursor" aria-activedescendant="retain-refineByFocusCollapsed1" aria-expanded="true" aria-haspopup="true" aria-label="Refine by" id="retain-refineByFocusExpanded1" role="button" tabindex="0" title="Refine by"></span></div>
+                        <div _ngcontent-c0="" aria-labelledby="retain-refineByFocusExpanded1" role="region">
+                            <form _ngcontent-c0="" novalidate="" class="ng-untouched ng-pristine ng-valid">
+
+                                <div _ngcontent-c0="" class="form-group">
+                                    <label _ngcontent-c0="" class="" for="metricName">Processes: </label>
+                                    <!----><select _ngcontent-c0="" aria-label="Processes can be changed from dropdown and page updates based on selected option" class="form-control border-color-contrast-select-fix ng-untouched ng-pristine ng-valid" id="filtProcess" name="filtProcess" role="combobox" tabindex="0">
+                                        <option _ngcontent-c0="" value="0">Select</option>
+                                        <!----><option _ngcontent-c0="" value="1" title="Analytics">
+                                            Analytics
+                                        </option><option _ngcontent-c0="" value="6" title="Capacity Management">
+                                            Capacity Management
+                                        </option><option _ngcontent-c0="" value="9" title="Change/Work Request Management">
+                                            Change/Work Request..
+                                        </option><option _ngcontent-c0="" value="14" title="Defect Management">
+                                            Defect Management
+                                        </option><option _ngcontent-c0="" value="46" title="DevOps">
+                                            DevOps
+                                        </option><option _ngcontent-c0="" value="19" title="Incident Management">
+                                            Incident Management
+                                        </option><option _ngcontent-c0="" value="25" title="Problem Management">
+                                            Problem Management
+                                        </option><option _ngcontent-c0="" value="33" title="Service Delivery">
+                                            Service Delivery
+                                        </option><option _ngcontent-c0="" value="34" title="Service Request Management">
+                                            Service Request Man..
+                                        </option><option _ngcontent-c0="" value="35" title="Service Transition">
+                                            Service Transition
+                                        </option><option _ngcontent-c0="" value="43" title="Work Plan Management">
+                                            Work Plan Management
+                                        </option>
+                                    </select>
+                                </div>
+                                <div _ngcontent-c0="" class="form-group">
+                                    <label _ngcontent-c0="" class="" for="metricName">Metric Name(Abbreviation):</label>
+                                    <!----><select _ngcontent-c0="" aria-label="Metric Name can be changed from dropdown and page updates based on selected option" class="form-control border-color-contrast-select-fix ng-untouched ng-pristine ng-valid" id="filtMetric" name="filtMetric" role="combobox" tabindex="0">
+                                        <option _ngcontent-c0="" value="0">Select</option>
+                                        <!----><option _ngcontent-c0="" value="47" title="% Critical SLAs Met(CSLA)">
+                                            % Critical SLAs M..
+                                        </option><option _ngcontent-c0="" value="2448" title="% Internal SLA Compliance(ISLAC)">
+                                            % Internal SLA Co..
+                                        </option><option _ngcontent-c0="" value="2430" title="% of Fixes Rejected">
+                                            % of Fixes Reject..
+                                        </option><option _ngcontent-c0="" value="2431" title="% of KT Completed">
+                                            % of KT Completed..
+                                        </option><option _ngcontent-c0="" value="1382" title="% of Work Efforts on Budget">
+                                            % of Work Efforts..
+                                        </option><option _ngcontent-c0="" value="1383" title="% of Work Efforts on Schedule">
+                                            % of Work Efforts..
+                                        </option><option _ngcontent-c0="" value="1432" title="% On Hold - Incidents Overall">
+                                            % On Hold - Incid..
+                                        </option><option _ngcontent-c0="" value="1358" title="% On Hold - Incidents P1">
+                                            % On Hold - Incid..
+                                        </option><option _ngcontent-c0="" value="1359" title="% On Hold - Incidents P2">
+                                            % On Hold - Incid..
+                                        </option><option _ngcontent-c0="" value="1360" title="% On Hold - Incidents P3">
+                                            % On Hold - Incid..
+                                        </option><option _ngcontent-c0="" value="1361" title="% On Hold - Incidents P4">
+                                            % On Hold - Incid..
+                                        </option><option _ngcontent-c0="" value="1362" title="% On Hold - Incidents P5">
+                                            % On Hold - Incid..
+                                        </option><option _ngcontent-c0="" value="1433" title="% On Hold - Problem Requests Overall">
+                                            % On Hold - Probl..
+                                        </option><option _ngcontent-c0="" value="1363" title="% On Hold - Problem Requests P1">
+                                            % On Hold - Probl..
+                                        </option><option _ngcontent-c0="" value="1364" title="% On Hold - Problem Requests P2">
+                                            % On Hold - Probl..
+                                        </option><option _ngcontent-c0="" value="1365" title="% On Hold - Problem Requests P3">
+                                            % On Hold - Probl..
+                                        </option><option _ngcontent-c0="" value="1366" title="% On Hold - Problem Requests P4">
+                                            % On Hold - Probl..
+                                        </option><option _ngcontent-c0="" value="1367" title="% On Hold - Problem Requests P5">
+                                            % On Hold - Probl..
+                                        </option><option _ngcontent-c0="" value="1368" title="% On Hold - Work Requests">
+                                            % On Hold - Work ..
+                                        </option><option _ngcontent-c0="" value="2551" title="% Resolved Incidents Reopened">
+                                            % Resolved Incide..
+                                        </option><option _ngcontent-c0="" value="2571" title="% Time Spent on Incidents">
+                                            % Time Spent on I..
+                                        </option><option _ngcontent-c0="" value="2570" title="% Time Spent on Problem Requests ">
+                                            % Time Spent on P..
+                                        </option><option _ngcontent-c0="" value="44" title="(AO)Percentage SLAs Met(SLAM)">
+                                            (AO)Percentage SL..
+                                        </option><option _ngcontent-c0="" value="41887" title="7122019">
+                                            7122019
+                                        </option><option _ngcontent-c0="" value="2636" title="Ageing(AGE)">
+                                            Ageing(AGE)
+                                        </option><option _ngcontent-c0="" value="2446" title="Agreed Application Availability ">
+                                            Agreed Applicatio..
+                                        </option><option _ngcontent-c0="" value="2444" title="Average Downtime per Failure">
+                                            Average Downtime ..
+                                        </option><option _ngcontent-c0="" value="2555" title="Average Effort per Incident ">
+                                            Average Effort pe..
+                                        </option><option _ngcontent-c0="" value="2556" title="Average Effort per Problem ">
+                                            Average Effort pe..
+                                        </option><option _ngcontent-c0="" value="2434" title="Average Effort per Service Request ">
+                                            Average Effort pe..
+                                        </option><option _ngcontent-c0="" value="86" title="Average Effort per Work Request">
+                                            Average Effort pe..
+                                        </option><option _ngcontent-c0="" value="1377" title="Average Resolution Effort - Incidents P1(AREI-P1)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="2581" title="Average Resolution Effort - Incidents P1-P2(AREI-P1-P2)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="1378" title="Average Resolution Effort - Incidents P2(AREI-P2)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="1379" title="Average Resolution Effort - Incidents P3(AREI-P3)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="1380" title="Average Resolution Effort - Incidents P4(AREI-P4)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="1381" title="Average Resolution Effort - Incidents P5(AREI-P5)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="1434" title="Average Resolution Effort - Incidents(ARE-I)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="212" title="Average Resolution Effort - Problems P1(AREP-P1)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="2582" title="Average Resolution Effort - Problems P1-P2(AREP-P1-P2)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="213" title="Average Resolution Effort - Problems P2(AREP-P2)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="205" title="Average Resolution Effort - Problems P3(AREP-P3)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="206" title="Average Resolution Effort - Problems P4(AREP-P4)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="207" title="Average Resolution Effort - Problems P5(AREP-P5)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="81" title="Average Resolution Effort - Problems(ARE-P)">
+                                            Average Resolutio..
+                                        </option><option _ngcontent-c0="" value="104" title="Backlog Processing Efficiency - Incidents P1(BPEI -P1)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="105" title="Backlog Processing Efficiency - Incidents P2(BPEI -P1)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="106" title="Backlog Processing Efficiency - Incidents P3(BPEI -P1)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="107" title="Backlog Processing Efficiency - Incidents P4(BPEI -P1)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="108" title="Backlog Processing Efficiency - Incidents P5(BPEI -P1)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="42" title="Backlog Processing Efficiency - Incidents(BPEI)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="76" title="Backlog Processing Efficiency - Problems P1(BPEP-P1)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="77" title="Backlog Processing Efficiency - Problems P2(BPEP-P2)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="78" title="Backlog Processing Efficiency - Problems P3(BPEP-P3)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="79" title="Backlog Processing Efficiency - Problems P4(BPEP-P4)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="80" title="Backlog Processing Efficiency - Problems P5(BPEP-P5)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="208" title="Backlog Processing Efficiency - Problems(BPEP)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="84" title="Backlog Processing Efficiency - WR">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="2553" title="Backlog Processing Efficiency Incidents P1-P2(BPEI-P1-P2)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="2554" title="Backlog Processing Efficiency Problems P1-P2(BPEP -P1-P2)">
+                                            Backlog Processin..
+                                        </option><option _ngcontent-c0="" value="2003" title="Build Success Rate(BSR)">
+                                            Build Success Rat..
+                                        </option><option _ngcontent-c0="" value="2005" title="Code Quality Status(CQS)">
+                                            Code Quality Stat..
+                                        </option><option _ngcontent-c0="" value="41805" title="Custom 1234(C123)">
+                                            Custom 1234(C123)..
+                                        </option><option _ngcontent-c0="" value="42310" title="Custom 129">
+                                            Custom 129
+                                        </option><option _ngcontent-c0="" value="42064" title="CustomMetricUTCCheck(CustomMetricUTCCheck)">
+                                            CustomMetricUTCCh..
+                                        </option><option _ngcontent-c0="" value="42060" title="CustomMetricUTCCheck1(CustomMetricUTCCheck1)">
+                                            CustomMetricUTCCh..
+                                        </option><option _ngcontent-c0="" value="42061" title="CustomMetricUTCCheck2(CustomMetricUTCCheck2)">
+                                            CustomMetricUTCCh..
+                                        </option><option _ngcontent-c0="" value="42062" title="CustomMetricUTCCheck3(CustomMetricUTCCheck3)">
+                                            CustomMetricUTCCh..
+                                        </option><option _ngcontent-c0="" value="42063" title="CustomMetricUTCCheck4(CustomMetricUTCCheck4)">
+                                            CustomMetricUTCCh..
+                                        </option><option _ngcontent-c0="" value="42065" title="CustomMetricUTCCheck5(CustomMetricUTCCheck5)">
+                                            CustomMetricUTCCh..
+                                        </option><option _ngcontent-c0="" value="2433" title="Defect Density(DD)">
+                                            Defect Density(DD..
+                                        </option><option _ngcontent-c0="" value="2637" title="Delivered Defects(DD)">
+                                            Delivered Defects..
+                                        </option><option _ngcontent-c0="" value="119" title="Delivered Request Ratio P1(DRR)">
+                                            Delivered Request..
+                                        </option><option _ngcontent-c0="" value="120" title="Delivered Request Ratio P2(DRR)">
+                                            Delivered Request..
+                                        </option><option _ngcontent-c0="" value="121" title="Delivered Request Ratio P3(DRR)">
+                                            Delivered Request..
+                                        </option><option _ngcontent-c0="" value="122" title="Delivered Request Ratio P4(DRR)">
+                                            Delivered Request..
+                                        </option><option _ngcontent-c0="" value="123" title="Delivered Request Ratio P5(DRR)">
+                                            Delivered Request..
+                                        </option><option _ngcontent-c0="" value="2004" title="Deployment Success Rate(DSR)">
+                                            Deployment Succes..
+                                        </option><option _ngcontent-c0="" value="2007" title="Environment Availability - Non-Prod(EA - Non-PROD)">
+                                            Environment Avail..
+                                        </option><option _ngcontent-c0="" value="2006" title="Environment Availability - PROD(EA - PROD)">
+                                            Environment Avail..
+                                        </option><option _ngcontent-c0="" value="114" title="Incidents Resolved per Hour P1">
+                                            Incidents Resolve..
+                                        </option><option _ngcontent-c0="" value="115" title="Incidents Resolved per Hour P2">
+                                            Incidents Resolve..
+                                        </option><option _ngcontent-c0="" value="116" title="Incidents Resolved per Hour P3">
+                                            Incidents Resolve..
+                                        </option><option _ngcontent-c0="" value="117" title="Incidents Resolved per Hour P4">
+                                            Incidents Resolve..
+                                        </option><option _ngcontent-c0="" value="118" title="Incidents Resolved per Hour P5">
+                                            Incidents Resolve..
+                                        </option><option _ngcontent-c0="" value="2001" title="IT Team productivity (ITP)">
+                                            IT Team productiv..
+                                        </option><option _ngcontent-c0="" value="2428" title="KT - Cost Performance Index(CPI)">
+                                            KT - Cost Perform..
+                                        </option><option _ngcontent-c0="" value="2429" title="KT - Schedule Performance Index(SPI)">
+                                            KT - Schedule Per..
+                                        </option><option _ngcontent-c0="" value="2442" title="Mean Time Between Failure (MTBF)">
+                                            Mean Time Between..
+                                        </option><option _ngcontent-c0="" value="2010" title="Mean Time to Detect (MTTI)(MTTD)">
+                                            Mean Time to Dete..
+                                        </option><option _ngcontent-c0="" value="2009" title="Mean time to Repair - Non- PROD(MTTR - Non-PROD)">
+                                            Mean time to Repa..
+                                        </option><option _ngcontent-c0="" value="2008" title="Mean Time to Repair - PROD(MTTR - PROD)">
+                                            Mean Time to Repa..
+                                        </option><option _ngcontent-c0="" value="43" title="Percentage of Incidents Re-opened Overall">
+                                            Percentage of Inc..
+                                        </option><option _ngcontent-c0="" value="109" title="Percentage of Incidents Re-opened P1">
+                                            Percentage of Inc..
+                                        </option><option _ngcontent-c0="" value="110" title="Percentage of Incidents Re-opened P2">
+                                            Percentage of Inc..
+                                        </option><option _ngcontent-c0="" value="111" title="Percentage of Incidents Re-opened P3">
+                                            Percentage of Inc..
+                                        </option><option _ngcontent-c0="" value="112" title="Percentage of Incidents Re-opened P4">
+                                            Percentage of Inc..
+                                        </option><option _ngcontent-c0="" value="113" title="Percentage of Incidents Re-opened P5">
+                                            Percentage of Inc..
+                                        </option><option _ngcontent-c0="" value="209" title="Percentage of Problem Requests Re-opened Overall">
+                                            Percentage of Pro..
+                                        </option><option _ngcontent-c0="" value="61" title="Percentage of Problem Requests Re-opened P1">
+                                            Percentage of Pro..
+                                        </option><option _ngcontent-c0="" value="62" title="Percentage of Problem Requests Re-opened P2">
+                                            Percentage of Pro..
+                                        </option><option _ngcontent-c0="" value="63" title="Percentage of Problem Requests Re-opened P3">
+                                            Percentage of Pro..
+                                        </option><option _ngcontent-c0="" value="64" title="Percentage of Problem Requests Re-opened P4">
+                                            Percentage of Pro..
+                                        </option><option _ngcontent-c0="" value="65" title="Percentage of Problem Requests Re-opened P5">
+                                            Percentage of Pro..
+                                        </option><option _ngcontent-c0="" value="85" title="Percentage of Work Requests Re-opened">
+                                            Percentage of Wor..
+                                        </option><option _ngcontent-c0="" value="2579" title="Remaining for Resolution ">
+                                            Remaining for Res..
+                                        </option><option _ngcontent-c0="" value="82" title="Resolution Time Performance - WR">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="40" title="Resolution Time Performance Incident Overall(RTPI)">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="94" title="Resolution Time Performance Incident P1(RTPI)">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="95" title="Resolution Time Performance Incident P2(RTPI)">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="96" title="Resolution Time Performance Incident P3(RTPI)">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="97" title="Resolution Time Performance Incident P4(RTPI)">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="98" title="Resolution Time Performance Incident P5">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="2549" title="Resolution Time Performance Incidents P1-P2">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="210" title="Resolution Time Performance Problem - Overall">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="66" title="Resolution Time Performance Problem P1">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="67" title="Resolution Time Performance Problem P2">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="68" title="Resolution Time Performance Problem P3">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="69" title="Resolution Time Performance Problem P4">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="70" title="Resolution Time Performance Problem P5">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="2552" title="Resolution Time Performance Problems P1-P2">
+                                            Resolution Time P..
+                                        </option><option _ngcontent-c0="" value="2583" title="Resolved Incidents Reopened P1-P2 ">
+                                            Resolved Incident..
+                                        </option><option _ngcontent-c0="" value="83" title="Response Time Performance - WR">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="41" title="Response Time Performance Incident Overall(RTPI)">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="99" title="Response Time Performance Incident P1(RTPI)">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="100" title="Response Time Performance Incident P2(RTPI)">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="101" title="Response Time Performance Incident P3(RTPI)">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="102" title="Response Time Performance Incident P4(RTPI)">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="103" title="Response Time Performance Incident P5">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="2550" title="Response Time Performance Incidents P1-P2">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="211" title="Response Time Performance Problem Overall">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="71" title="Response Time Performance Problem P1">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="72" title="Response Time Performance Problem P2">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="73" title="Response Time Performance Problem P3">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="74" title="Response Time Performance Problem P4">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="75" title="Response Time Performance Problem P5">
+                                            Response Time Per..
+                                        </option><option _ngcontent-c0="" value="2494" title="Root Cause Analysis Completed on Time Overall">
+                                            Root Cause Analys..
+                                        </option><option _ngcontent-c0="" value="2495" title="Root Cause Analysis Completed on Time P1">
+                                            Root Cause Analys..
+                                        </option><option _ngcontent-c0="" value="2496" title="Root Cause Analysis Completed on Time P2">
+                                            Root Cause Analys..
+                                        </option><option _ngcontent-c0="" value="2497" title="Root Cause Analysis Completed on Time P3">
+                                            Root Cause Analys..
+                                        </option><option _ngcontent-c0="" value="2498" title="Root Cause Analysis Completed on Time P4">
+                                            Root Cause Analys..
+                                        </option><option _ngcontent-c0="" value="42083" title="Test Workflow analysis -29721">
+                                            Test Workflow ana..
+                                        </option><option _ngcontent-c0="" value="2002" title="Time to market (TTM)">
+                                            Time to market (T..
+                                        </option><option _ngcontent-c0="" value="42082" title="Workflow analysis -29721">
+                                            Workflow analysis..
+                                        </option>
+                                    </select>
+                                </div>
+
+
+                                <button _ngcontent-c0="" aria-label="Click to update page based on applied Filter" class="btn btn-primary collapse-button-color-fix">Search</button>
+                                <button _ngcontent-c0="" aria-label="Click to clear all Filter and page updates" class="btn btn-primary collapse-button-color-fix">Clear All</button>
+                            </form>
+                        </div>
+                        <span _ngcontent-c0="" onfocus="document.getElementById(&#39;retain-refineByFocusExpanded1&#39;).focus();" tabindex="0"> </span>
+                    </div>
+
+                    <div _ngcontent-c0="" class="verticalText" id="retain-refineByFocusCollapsed1">
+                        <div _ngcontent-c0="" class="filterHeader overviewfilterHeader"><span _ngcontent-c0="" aria-controls="retain-refineByFocusCollapsed1" aria-expanded="false" aria-haspopup="true" aria-label="Refine by" class="carat-left handCursor" role="button" tabindex="0" title="Refine by"></span><div _ngcontent-c0="" class="rotatetext">Refine By </div></div>
+                    </div>
+                    <div _ngcontent-c0="" class="col-sm-10 col-lg-10 col-xs-12 contentContainer fullWidth">
+                        <span _ngcontent-c0="" onfocus="document.getElementById(&#39;retain-refineByFocusExpanded1&#39;).focus();" tabindex="0"> </span>
+
+
+
+                    <!---->
+                    
+                    <!---->
+                    
+                    <div _ngcontent-c0="" class="col-lg-5 col-xs-12 pull-right">
+                        <span _ngcontent-c0="" class="adslinklabel pull-right font-changes-ads">For more details on metrics, go to <a _ngcontent-c0="" aria-label="ADS (Open in a new tab)" class="link-color-fix" href="https://in.accenture.com/accenturedeliverysuite/" target="_blank" title="ADS (Open in a new tab)"><u _ngcontent-c0="">ADS</u></a></span>
+                    </div>
+
+                    <div _ngcontent-c0="" class="col-xs-12 accordionWrapper">
+
+                            <div _ngcontent-c0="" class="panel-group">
+                                <div _ngcontent-c0="" class="panel panel-default" id="divfirst">
+
+                               
+
+                                    <div _ngcontent-c0="" class="panel-body collapse in" style="padding:20px 0;">
+                                        <!---->
+                                    </div>
+
+                                    <div _ngcontent-c0="" class="panel-collapse collapse in">
+                                        <div _ngcontent-c0="" class="panel-body ">
+                                            <div _ngcontent-c0="" class="col-xs-12 col-sm-5 wsMeasureTable responsiveTable">
+                                                <!----><table _ngcontent-c0="" class="table table-bordered table-striped cmsTable">
+                                                    <thead _ngcontent-c0="">
+                                                        <tr _ngcontent-c0="">
+                                                            <th _ngcontent-c0="" scope="col" class="col-sm-5 fontBold">Measure Name</th>
+                                                            <!----><th _ngcontent-c0="" class="col-sm-3 fontBold" scope="col">CMS</th>
+                                                            <th _ngcontent-c0="" scope="col" class="col-sm-3 fontBold">Value</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody _ngcontent-c0="">
+                                                        <!----><!---->
+                                                            <!----><tr _ngcontent-c0="">
+                                                                
+                                                                <!----><th _ngcontent-c0="" class="measureTh" scope="row" title="This indicates the percentage of duration the Application(s) or System(s) should to be made available for operations in a month as agreed with client. " id="MeasureId-14308">
+
+                                                                    %SLA met MTD Total SLAs Met-Number<!----><label _ngcontent-c0="" class="asteriskRed" title="Measure associated to Core metric.">*</label>
+                                                                
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+
+                                                            </th>
+                                                            
+                                                            <!---->
+                                                            <td _ngcontent-c0="" colspan="2" style="padding:0px;">
+                                                                <!---->
+
+                                                                <!----><div _ngcontent-c0="">
+                                                                    <table _ngcontent-c0="" class="table table-bordered table-striped  cmsTable">
+                                                                        <tbody _ngcontent-c0=""><!---->
+                                                                        <!----><tr _ngcontent-c0="">
+                                                                            <td _ngcontent-c0="" class="col-sm-4" id="CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                CMS Testing<br _ngcontent-c0="">
+                                                                            </td>
+                                                                            <!----><td _ngcontent-c0="" class="col-sm-3">
+                                                                                <input _ngcontent-c0="" onblur="calculate(this,1)" id="msID1" decimalplaces="2" onlynumber="true" class="value-box-border form-control ng-untouched ng-pristine ng-valid" maxlength="19" type="text" aria-labelledby="MeasureId-14308-CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                
+
+                                                                                    <!----><span _ngcontent-c0="" aria-label="Looks like one of the measures data is reported as null or 0 or Measure is not in scope to report" class="sr-only"></span>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                                </td>
+                                                                                <!---->
+                                                                                <!---->
+                                                                                <!---->
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        <!---->
+                                                            <!----><tr _ngcontent-c0="">
+                                                                
+                                                                <!----><th _ngcontent-c0="" class="measureTh" scope="row" title="Total count of completed tickets of all severities" id="MeasureId-15368">
+
+                                                                    MTD Total SLA-Number<!----><label _ngcontent-c0="" class="asteriskRed" title="Measure associated to Core metric.">*</label>
+                                                                
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+
+                                                            </th>
+                                                            
+                                                            <!---->
+                                                            <td _ngcontent-c0="" colspan="2" style="padding:0px;">
+                                                                <!---->
+
+                                                                <!----><div _ngcontent-c0="">
+                                                                    <table _ngcontent-c0="" class="table table-bordered table-striped  cmsTable">
+                                                                        <tbody _ngcontent-c0=""><!---->
+                                                                        <!----><tr _ngcontent-c0="">
+                                                                            <td _ngcontent-c0="" class="col-sm-4" id="CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                CMS Testing<br _ngcontent-c0="">
+                                                                            </td>
+                                                                            <!----><td _ngcontent-c0="" class="col-sm-3">
+                                                                                <input onblur="calculate(this,2)" _ngcontent-c0="" id="msID2" decimalplaces="2" onlynumber="true" class="value-box-border form-control ng-untouched ng-pristine ng-valid" maxlength="19" type="text" aria-labelledby="MeasureId-15368-CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                
+
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                                </td>
+                                                                                <!---->
+                                                                                <!---->
+                                                                                <!---->
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        <!---->
+                                                            <!----><tr _ngcontent-c0="">
+                                                                
+                                                                <!----><th _ngcontent-c0="" class="measureTh" scope="row" title="	MTD new incidents which were cancelled in the current month P1" id="MeasureId-10297">
+
+                                                                    Number of open incidents exceeding resolution SLA-Number
+                                                                
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+
+                                                            </th>
+                                                            
+                                                            <!---->
+                                                            <td _ngcontent-c0="" colspan="2" style="padding:0px;">
+                                                                <!---->
+
+                                                                <!----><div _ngcontent-c0="">
+                                                                    <table _ngcontent-c0="" class="table table-bordered table-striped  cmsTable">
+                                                                        <tbody _ngcontent-c0=""><!---->
+                                                                        <!----><tr _ngcontent-c0="">
+                                                                            <td _ngcontent-c0="" class="col-sm-4" id="CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                CMS Testing<br _ngcontent-c0="">
+                                                                            </td>
+                                                                            <!----><td _ngcontent-c0="" class="col-sm-3">
+                                                                                <input onblur="calculate(this,3)" _ngcontent-c0="" id="msID3" decimalplaces="2" onlynumber="true" class="value-box-border form-control ng-untouched ng-pristine ng-valid" maxlength="19" type="text" aria-labelledby="MeasureId-10297-CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                
+
+                                                                                    <!----><span _ngcontent-c0="" aria-label="Looks like one of the measures data is reported as null or 0 or Measure is not in scope to report" class="sr-only"></span>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                                </td>
+                                                                                <!---->
+                                                                                <!---->
+                                                                                <!---->
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        <!---->
+                                                            <!----><tr _ngcontent-c0="">
+                                                                
+                                                                <!----><th _ngcontent-c0="" class="measureTh" scope="row" title="	MTD new incidents which were cancelled in the current month P2" id="MeasureId-10298">
+
+                                                                    Total efforts spent on Incidents P1
+                                                                
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+
+                                                            </th>
+                                                            
+                                                            <!---->
+                                                            <td _ngcontent-c0="" colspan="2" style="padding:0px;">
+                                                                <!---->
+
+                                                                <!----><div _ngcontent-c0="">
+                                                                    <table _ngcontent-c0="" class="table table-bordered table-striped  cmsTable">
+                                                                        <tbody _ngcontent-c0=""><!---->
+                                                                        <!----><tr _ngcontent-c0="">
+                                                                            <td _ngcontent-c0="" class="col-sm-4" id="CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                CMS Testing<br _ngcontent-c0="">
+                                                                            </td>
+                                                                            <!----><td _ngcontent-c0="" class="col-sm-3">
+                                                                                <input onblur="calculate(this,4)" _ngcontent-c0="" id="msID4" decimalplaces="2" onlynumber="true" class="value-box-border form-control ng-untouched ng-pristine ng-valid" maxlength="19" type="text" aria-labelledby="MeasureId-10298-CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                
+
+                                                                                    <!----><span _ngcontent-c0="" aria-label="Looks like one of the measures data is reported as null or 0 or Measure is not in scope to report" class="sr-only"></span>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                                </td>
+                                                                                <!---->
+                                                                                <!---->
+                                                                                <!---->
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        <!---->
+                                                            <!----><tr _ngcontent-c0="">
+                                                                
+                                                                <!----><th _ngcontent-c0="" class="measureTh" scope="row" title="	MTD new incidents which were cancelled in the current month P3" id="MeasureId-10299">
+
+                                                                    Total efforts spent on Incidents P2
+                                                                
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+
+                                                            </th>
+                                                            
+                                                            <!---->
+                                                            <td _ngcontent-c0="" colspan="2" style="padding:0px;">
+                                                                <!---->
+
+                                                                <!----><div _ngcontent-c0="">
+                                                                    <table _ngcontent-c0="" class="table table-bordered table-striped  cmsTable">
+                                                                        <tbody _ngcontent-c0=""><!---->
+                                                                        <!----><tr _ngcontent-c0="">
+                                                                            <td _ngcontent-c0="" class="col-sm-4" id="CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                CMS Testing<br _ngcontent-c0="">
+                                                                            </td>
+                                                                            <!----><td _ngcontent-c0="" class="col-sm-3">
+                                                                                <input onblur="calculate(this,5)" _ngcontent-c0="" id="msID5" decimalplaces="2" onlynumber="true" class="value-box-border form-control ng-untouched ng-pristine ng-valid" maxlength="19" type="text" aria-labelledby="MeasureId-10299-CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                
+
+                                                                                    <!----><span _ngcontent-c0="" aria-label="Looks like one of the measures data is reported as null or 0 or Measure is not in scope to report" class="sr-only"></span>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                                </td>
+                                                                                <!---->
+                                                                                <!---->
+                                                                                <!---->
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr _ngcontent-c0="">
+                                                                
+                                                                <!----><th _ngcontent-c0="" class="measureTh" scope="row" title="	MTD new incidents which were cancelled in the current month P3" id="MeasureId-10299">
+
+                                                                    Total efforts spent on Problems P1
+                                                                
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+
+                                                            </th>
+                                                            
+                                                            <!---->
+                                                            <td _ngcontent-c0="" colspan="2" style="padding:0px;">
+                                                                <!---->
+
+                                                                <!----><div _ngcontent-c0="">
+                                                                    <table _ngcontent-c0="" class="table table-bordered table-striped  cmsTable">
+                                                                        <tbody _ngcontent-c0=""><!---->
+                                                                        <!----><tr _ngcontent-c0="">
+                                                                            <td _ngcontent-c0="" class="col-sm-4" id="CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                CMS Testing<br _ngcontent-c0="">
+                                                                            </td>
+                                                                            <!----><td _ngcontent-c0="" class="col-sm-3">
+                                                                                <input onblur="calculate(this,6)" _ngcontent-c0="" id="msID6" decimalplaces="2" onlynumber="true" class="value-box-border form-control ng-untouched ng-pristine ng-valid" maxlength="19" type="text" aria-labelledby="MeasureId-10299-CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                
+
+                                                                                    <!----><span _ngcontent-c0="" aria-label="Looks like one of the measures data is reported as null or 0 or Measure is not in scope to report" class="sr-only"></span>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                                </td>
+                                                                                <!---->
+                                                                                <!---->
+                                                                                <!---->
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr _ngcontent-c0="">
+                                                                
+                                                                <!----><th _ngcontent-c0="" class="measureTh" scope="row" title="	MTD new incidents which were cancelled in the current month P3" id="MeasureId-10299">
+
+                                                                    Total efforts spent on Problems P2
+                                                                
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+
+                                                            </th>
+                                                            
+                                                            <!---->
+                                                            <td _ngcontent-c0="" colspan="2" style="padding:0px;">
+                                                                <!---->
+
+                                                                <!----><div _ngcontent-c0="">
+                                                                    <table _ngcontent-c0="" class="table table-bordered table-striped  cmsTable">
+                                                                        <tbody _ngcontent-c0=""><!---->
+                                                                        <!----><tr _ngcontent-c0="">
+                                                                            <td _ngcontent-c0="" class="col-sm-4" id="CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                CMS Testing<br _ngcontent-c0="">
+                                                                            </td>
+                                                                            <!----><td _ngcontent-c0="" class="col-sm-3">
+                                                                                <input onblur="calculate(this,7)" _ngcontent-c0="" id="msID7" decimalplaces="2" onlynumber="true" class="value-box-border form-control ng-untouched ng-pristine ng-valid" maxlength="19" type="text" aria-labelledby="MeasureId-10299-CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                
+
+                                                                                    <!----><span _ngcontent-c0="" aria-label="Looks like one of the measures data is reported as null or 0 or Measure is not in scope to report" class="sr-only"></span>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                                </td>
+                                                                                <!---->
+                                                                                <!---->
+                                                                                <!---->
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr _ngcontent-c0="">
+                                                                
+                                                                <!----><th _ngcontent-c0="" class="measureTh" scope="row" title="	MTD new incidents which were cancelled in the current month P3" id="MeasureId-10299">
+
+                                                                    Resolved Incidents P1
+                                                                
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+
+                                                            </th>
+                                                            
+                                                            <!---->
+                                                            <td _ngcontent-c0="" colspan="2" style="padding:0px;">
+                                                                <!---->
+
+                                                                <!----><div _ngcontent-c0="">
+                                                                    <table _ngcontent-c0="" class="table table-bordered table-striped  cmsTable">
+                                                                        <tbody _ngcontent-c0=""><!---->
+                                                                        <!----><tr _ngcontent-c0="">
+                                                                            <td _ngcontent-c0="" class="col-sm-4" id="CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                CMS Testing<br _ngcontent-c0="">
+                                                                            </td>
+                                                                            <!----><td _ngcontent-c0="" class="col-sm-3">
+                                                                                <input onblur="calculate(this,8)" _ngcontent-c0="" id="msID8" decimalplaces="2" onlynumber="true" class="value-box-border form-control ng-untouched ng-pristine ng-valid" maxlength="19" type="text" aria-labelledby="MeasureId-10299-CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                
+
+                                                                                    <!----><span _ngcontent-c0="" aria-label="Looks like one of the measures data is reported as null or 0 or Measure is not in scope to report" class="sr-only"></span>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                                </td>
+                                                                                <!---->
+                                                                                <!---->
+                                                                                <!---->
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr _ngcontent-c0="">
+                                                                
+                                                                <!----><th _ngcontent-c0="" class="measureTh" scope="row" title="	MTD new incidents which were cancelled in the current month P3" id="MeasureId-10299">
+
+                                                                    Resolved Incidents P2
+                                                                
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+
+                                                            </th>
+                                                            
+                                                            <!---->
+                                                            <td _ngcontent-c0="" colspan="2" style="padding:0px;">
+                                                                <!---->
+
+                                                                <!----><div _ngcontent-c0="">
+                                                                    <table _ngcontent-c0="" class="table table-bordered table-striped  cmsTable">
+                                                                        <tbody _ngcontent-c0=""><!---->
+                                                                        <!----><tr _ngcontent-c0="">
+                                                                            <td _ngcontent-c0="" class="col-sm-4" id="CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                CMS Testing<br _ngcontent-c0="">
+                                                                            </td>
+                                                                            <!----><td _ngcontent-c0="" class="col-sm-3">
+                                                                                <input onblur="calculate(this,9)" _ngcontent-c0="" id="msID9" decimalplaces="2" onlynumber="true" class="value-box-border form-control ng-untouched ng-pristine ng-valid" maxlength="19" type="text" aria-labelledby="MeasureId-10299-CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                
+
+                                                                                    <!----><span _ngcontent-c0="" aria-label="Looks like one of the measures data is reported as null or 0 or Measure is not in scope to report" class="sr-only"></span>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                                </td>
+                                                                                <!---->
+                                                                                <!---->
+                                                                                <!---->
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr _ngcontent-c0="">
+                                                                
+                                                                <!----><th _ngcontent-c0="" class="measureTh" scope="row" title="	MTD new incidents which were cancelled in the current month P3" id="MeasureId-10299">
+
+                                                                    Resolved Problem Requests P1
+                                                                
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+
+                                                            </th>
+                                                            
+                                                            <!---->
+                                                            <td _ngcontent-c0="" colspan="2" style="padding:0px;">
+                                                                <!---->
+
+                                                                <!----><div _ngcontent-c0="">
+                                                                    <table _ngcontent-c0="" class="table table-bordered table-striped  cmsTable">
+                                                                        <tbody _ngcontent-c0=""><!---->
+                                                                        <!----><tr _ngcontent-c0="">
+                                                                            <td _ngcontent-c0="" class="col-sm-4" id="CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                CMS Testing<br _ngcontent-c0="">
+                                                                            </td>
+                                                                            <!----><td _ngcontent-c0="" class="col-sm-3">
+                                                                                <input onblur="calculate(this,10)" _ngcontent-c0="" id="msID10" decimalplaces="2" onlynumber="true" class="value-box-border form-control ng-untouched ng-pristine ng-valid" maxlength="19" type="text" aria-labelledby="MeasureId-10299-CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                
+
+                                                                                    <!----><span _ngcontent-c0="" aria-label="Looks like one of the measures data is reported as null or 0 or Measure is not in scope to report" class="sr-only"></span>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                                </td>
+                                                                                <!---->
+                                                                                <!---->
+                                                                                <!---->
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr _ngcontent-c0="">
+                                                                
+                                                                <!----><th _ngcontent-c0="" class="measureTh" scope="row" title="	MTD new incidents which were cancelled in the current month P3" id="MeasureId-10299">
+
+                                                                    Resolved Problem Requests P2
+                                                                
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+
+                                                            </th>
+                                                            
+                                                            <!---->
+                                                            <td _ngcontent-c0="" colspan="2" style="padding:0px;">
+                                                                <!---->
+
+                                                                <!----><div _ngcontent-c0="">
+                                                                    <table _ngcontent-c0="" class="table table-bordered table-striped  cmsTable">
+                                                                        <tbody _ngcontent-c0=""><!---->
+                                                                        <!----><tr _ngcontent-c0="">
+                                                                            <td _ngcontent-c0="" class="col-sm-4" id="CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                CMS Testing<br _ngcontent-c0="">
+                                                                            </td>
+                                                                            <!----><td _ngcontent-c0="" class="col-sm-3">
+                                                                                <input onblur="calculate(this,11)" _ngcontent-c0="" id="msID11" decimalplaces="2" onlynumber="true" class="value-box-border form-control ng-untouched ng-pristine ng-valid" maxlength="19" type="text" aria-labelledby="MeasureId-10299-CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                
+
+                                                                                    <!----><span _ngcontent-c0="" aria-label="Looks like one of the measures data is reported as null or 0 or Measure is not in scope to report" class="sr-only"></span>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                                </td>
+                                                                                <!---->
+                                                                                <!---->
+                                                                                <!---->
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr _ngcontent-c0="">
+                                                                
+                                                                <!----><th _ngcontent-c0="" class="measureTh" scope="row" title="	MTD new incidents which were cancelled in the current month P3" id="MeasureId-10299">
+
+                                                                    Number of post delivery defects-Number
+                                                                
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+                                                                <!---->
+
+                                                            </th>
+                                                            
+                                                            <!---->
+                                                            <td _ngcontent-c0="" colspan="2" style="padding:0px;">
+                                                                <!---->
+
+                                                                <!----><div _ngcontent-c0="">
+                                                                    <table _ngcontent-c0="" class="table table-bordered table-striped  cmsTable">
+                                                                        <tbody _ngcontent-c0=""><!---->
+                                                                        <!----><tr _ngcontent-c0="">
+                                                                            <td _ngcontent-c0="" class="col-sm-4" id="CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                CMS Testing<br _ngcontent-c0="">
+                                                                            </td>
+                                                                            <!----><td _ngcontent-c0="" class="col-sm-3">
+                                                                                <input onblur="calculate(this,12)" _ngcontent-c0="" id="msID12" decimalplaces="2" onlynumber="true" class="value-box-border form-control ng-untouched ng-pristine ng-valid" maxlength="19" type="text" aria-labelledby="MeasureId-10299-CmsId-005805a3-1a9c-4189-a049-584762f5f068">
+                                                                                
+
+                                                                                    <!----><span _ngcontent-c0="" aria-label="Looks like one of the measures data is reported as null or 0 or Measure is not in scope to report" class="sr-only"></span>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                                </td>
+                                                                                <!---->
+                                                                                <!---->
+                                                                                <!---->
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                      
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div _ngcontent-c0="" class="col-xs-12 col-sm-7 wsMeasureTable responsiveTable">
+                                                <!----><table _ngcontent-c0="" class="table table-bordered table-striped  fixedtable">
+                                                    <thead _ngcontent-c0="">
+                                                        <tr _ngcontent-c0="">
+                                                            <th _ngcontent-c0="" class="col-sm-5 fontBold" scope="col">Metric Name</th>
+                                                            <th _ngcontent-c0="" class="col-sm-2 fontBold" scope="col">Last Week</th>
+                                                            <!---->
+                                                            <!----><th _ngcontent-c0="" class="col-sm-2 fontBold" scope="col"><span _ngcontent-c0="">Last Month</span></th>
+                                                            <th _ngcontent-c0="" class="col-sm-3 fontBold" scope="col">Current</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody _ngcontent-c0="">
+                                                        <!----><tr _ngcontent-c0="" aria-activedescendant="retain-metricFocus" class="metrictooltip" id="retain-metricFocus" tabindex="0">
+                                                            <td _ngcontent-c0="">
+                                                                <a _ngcontent-c0="" class="label_h3 handCursor link-color-fix" data-target="#thresholdModal" data-toggle="modal" href="https://hpdpmetricsuat.ciostage.accenture.com/#" role="button" id="MetId-1432">
+                                                                    <u _ngcontent-c0="">
+                                                                        SLAs Met
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+                                                                    </u>
+                                                                </a><!---->
+
+                                                            </td>
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0="" id="mtID1" class="warningWrap">
+                                                            </td>
+                                                        </tr><tr _ngcontent-c0="" aria-activedescendant="retain-metricFocus" class="metrictooltip" id="retain-metricFocus" tabindex="0">
+                                                            <td _ngcontent-c0="">
+                                                                <a _ngcontent-c0="" class="label_h3 handCursor link-color-fix" data-target="#thresholdModal" data-toggle="modal" href="https://hpdpmetricsuat.ciostage.accenture.com/#" role="button" id="MetId-1358">
+                                                                    <u _ngcontent-c0="">
+                                                                        Ageing
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+                                                                    </u>
+                                                                </a><!---->
+
+                                                            </td>
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0="" id="mtID2" class="warningWrap">
+                                                            </td>
+                                                        </tr><tr _ngcontent-c0="" aria-activedescendant="retain-metricFocus" class="metrictooltip" id="retain-metricFocus" tabindex="0">
+                                                            <td _ngcontent-c0="">
+                                                                <a _ngcontent-c0="" class="label_h3 handCursor link-color-fix" data-target="#thresholdModal" data-toggle="modal" href="https://hpdpmetricsuat.ciostage.accenture.com/#" role="button" id="MetId-1359">
+                                                                    <u _ngcontent-c0="">
+                                                                        Average Resolution Effort - Incidents
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+                                                                    </u>
+                                                                </a><!---->
+
+                                                            </td>
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0="" id="mtID3" class="warningWrap">
+                                                            </td>
+                                                        </tr><tr _ngcontent-c0="" aria-activedescendant="retain-metricFocus" class="metrictooltip" id="retain-metricFocus" tabindex="0">
+                                                            <td _ngcontent-c0="">
+                                                                <a _ngcontent-c0="" class="label_h3 handCursor link-color-fix" data-target="#thresholdModal" data-toggle="modal" href="https://hpdpmetricsuat.ciostage.accenture.com/#" role="button" id="MetId-1360">
+                                                                    <u _ngcontent-c0="">
+                                                                        Average Resolution Effort - Problems
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+                                                                    </u>
+                                                                </a><!---->
+
+                                                            </td>
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0="" id="mtID4" class="warningWrap">
+                                                            </td>
+                                                        </tr><tr _ngcontent-c0="" aria-activedescendant="retain-metricFocus" class="metrictooltip" id="retain-metricFocus" tabindex="0">
+                                                            <td _ngcontent-c0="">
+                                                                <a _ngcontent-c0="" class="label_h3 handCursor link-color-fix" data-target="#thresholdModal" data-toggle="modal" href="https://hpdpmetricsuat.ciostage.accenture.com/#" role="button" id="MetId-1361">
+                                                                    <u _ngcontent-c0="">
+                                                                        Backlog Processing Efficiency - Incidents
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+                                                                    </u>
+                                                                </a><!---->
+
+                                                            </td>
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0="" id="mtID5" class="warningWrap">
+                                                            </td>
+                                                        </tr>
+                                                        <tr _ngcontent-c0="" aria-activedescendant="retain-metricFocus" class="metrictooltip" id="retain-metricFocus" tabindex="0">
+                                                            <td _ngcontent-c0="">
+                                                                <a _ngcontent-c0="" class="label_h3 handCursor link-color-fix" data-target="#thresholdModal" data-toggle="modal" href="https://hpdpmetricsuat.ciostage.accenture.com/#" role="button" id="MetId-1361">
+                                                                    <u _ngcontent-c0="">
+                                                                        Backlog Processing Efficiency - Problems
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+                                                                    </u>
+                                                                </a><!---->
+
+                                                            </td>
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0="" id="mtID6" class="warningWrap">
+                                                            </td>
+                                                        </tr>
+                                                        <tr _ngcontent-c0="" aria-activedescendant="retain-metricFocus" class="metrictooltip" id="retain-metricFocus" tabindex="0">
+                                                            <td _ngcontent-c0="">
+                                                                <a _ngcontent-c0="" class="label_h3 handCursor link-color-fix" data-target="#thresholdModal" data-toggle="modal" href="https://hpdpmetricsuat.ciostage.accenture.com/#" role="button" id="MetId-1361">
+                                                                    <u _ngcontent-c0="">
+                                                                        Delivered Defects
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+
+
+                                                                        <!---->
+                                                                        <!---->
+                                                                        <!---->
+                                                                    </u>
+                                                                </a><!---->
+
+                                                            </td>
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0=""></td>
+
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                            <!----><td _ngcontent-c0="" id="mtID7" class="warningWrap">
+                                                            </td>
+                                                        </tr>
+                                                       
+                                                    </tbody>
+                                                </table>
+                                                <div _ngcontent-c0="">
+
+                                            </div>
+                                        </div>
+                                        
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div _ngcontent-c0="" class="panel panel-default" id="divsecond" hidden="">
+
+                                <div _ngcontent-c0="" class="submissionHeader workstream SubHeader">
+                                    
+                                    <a _ngcontent-c0="" aria-activedescendant="retain-accordianFocus" aria-expanded="false" aria-haspopup="true" href="javascript:void(0);" id="retain-accordianFocus" role="link" tabindex="0" class="panel-title handCursor">
+                                        Incident Management
+                                        <i _ngcontent-c0="" class="indicator glyphicon glyphicon-triangle-top pull-left"></i>
+                                    </a>
+                                    
+                                    <div _ngcontent-c0="" class="pull-right panel-title">
+                                        In scope for current period
+                                        
+                                        <div _ngcontent-c0="" class="pull-right panel-title" id="retain-Inscope-Collapsed1">
+
+                                            
+                                            <!---->
+                                        </div>
+                                        <div _ngcontent-c0="" class="pull-right panel-title">
+
+                                            <!---->
+                                        </div>
+                                        <div _ngcontent-c0="" class="pull-right panel-title">
+
+                                            <!----><label _ngcontent-c0="" aria-label="In scope for current period" class="switch" title="Delivery function associated with Core metrics cannot be descoped">
+                                                <input _ngcontent-c0="" aria-label="In scope for current period" id="retain-Inscope-Collapsed3" tabindex="0" type="checkbox" class="disable-inscope border-inscope ng-untouched ng-pristine" disabled="">
+                                                <span _ngcontent-c0="" class="switch-label border-inscope" data-off="yes" data-on="No"></span> <span _ngcontent-c0="" class="switch-handle"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <!----><div _ngcontent-c0="" class="col-xs-12">
+                        <div _ngcontent-c0="">
+                            <!----><label _ngcontent-c0="" class="pull-left"> </label>
+                        </div>
+                        <br _ngcontent-c0="">
+                        <hr _ngcontent-c0="">
+                        <div _ngcontent-c0="" class="pull-right">
+                            <!---->
+
+                                <!----><input _ngcontent-c0="" class="btn btn-primary" type="button" value="Save as Draft">
+                                <input id="btnSubmit" _ngcontent-c0="" class="btn btn-primary" type="button" value="Submit">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div _ngcontent-c0="" class="modal fade alertBox" data-backdrop="false" data-keyboard="false" id="alertModal" role="dialog" style="padding-top:40px;" tabindex="0">
+                <div _ngcontent-c0="" class="modal-dialog">
+
+                    <div _ngcontent-c0="" class="modal-content inScope-popup">
+                        <div _ngcontent-c0="" class="alertBox-header inScope-header">
+                            <h4 _ngcontent-c0="">Metric Submission</h4>
+                        </div>
+                        <div _ngcontent-c0="" class="modal-body inScope-body">
+                            <p _ngcontent-c0="">By marking the process out of scope, you won't be able to report  measures against this process.Do you wish to continue?</p>
+                        </div>
+                        <div _ngcontent-c0="" class="modal-footer inScope-footer">
+                            <button _ngcontent-c0="" class="btn btn-primary" data-dismiss="modal" id="yes" role="button" style="width:68px" tabindex="0" type="button">Yes</button>
+                            <button _ngcontent-c0="" class="btn btn-primary" data-dismiss="modal" id="cancl" role="button" style="width:68px" tabindex="0" type="button">Cancel</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <div _ngcontent-c0="" class="col-sm-12 col-xs-12 col-lg-12">
+
+        
+        <!---->
+    </div>
+
+
+    <div _ngcontent-c0="" class="modal cms_helpmodal in" id="cmsHelpModal" style="display: none;" tabindex="0">
+        <div _ngcontent-c0="" class="modal-dialog-wrap">
+            <div _ngcontent-c0="" class="modal-dialog modal-lg">
+                <div _ngcontent-c0="" class="modal-content">
+                    <div _ngcontent-c0="" class="modal-body">
+                        <div _ngcontent-c0="" class="carousel slide carousel-sync" data-interval="false" data-ride="carousel" data-wrap="false" id="carousel-example-generic">
+                            <div _ngcontent-c0="" class="carousel-inner">
+                                <!---->
+                            </div>
+
+                            <div _ngcontent-c0="" class="prev_next">
+
+                                <button _ngcontent-c0="" aria-label="Press enter for previous slide" class="glyphicon glyphicon-play prev_btn left" data-placement="bottom" data-slide="prev" data-toggle="tooltip" href="#carousel-example-generic" id="leftbutton" role="button"></button>
+                                <button _ngcontent-c0="" aria-label="Press enter for next slide" class="glyphicon glyphicon-play next_btn right" data-placement="bottom" data-slide="next" data-toggle="tooltip" href="#carousel-example-generic" id="rightbutton" role="button"></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div _ngcontent-c0="" class="modal-footer">
+                        <div _ngcontent-c0="" class="col-xs-12">
+                            <div _ngcontent-c0="" class="pull-right form-group">
+                                <input _ngcontent-c0="" class="form-control ng-untouched ng-pristine ng-valid" id="subscribeNews" type="checkbox"><label _ngcontent-c0="" class="form-label">Do not show this again.</label>
+                                <button _ngcontent-c0="" class="btn btn-primary">Save</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!---->
+
+    <!---->
+
+    
+    <alert-box _ngcontent-c0="" tabindex="0"><span onfocus="document.getElementById(&#39;alertboxclose&#39;).focus();" tabindex="0"> </span> 
+<!---->
+
+
+
+
+</alert-box>
+    <warning-box _ngcontent-c0="" tabindex="0">
+<!---->
+</warning-box>
+    <sniffer-warning-box _ngcontent-c0="" tabindex="0">
+<!---->
+</sniffer-warning-box>
+
+
+
+
+
+
+
+
+
+</metric-submission-ui>
+
+            </div>
+            <!---->
+
+        </div>
+    </div>
+
+    <footer class="footer text-center" ng-controller="FooterController" role="contentinfo">
+        © 2001-2021 Accenture. All Rights Reserved. Accenture Confidential. For Internal Use Only.
+        <a aria-label="Terms of Use(Open a Popup)" class="footer-linkcolor" data-target="#Termsofusepopupfooter" data-toggle="modal" href="javascript:void(0);" title="Terms of Use (Open a Popup)">Terms of Use</a>&nbsp;|&nbsp;
+        <a id="privacy" aria-label="Data Privacy Statement(Open a Popup)" class="footer-linkcolor" data-target="#dataPrivacyStatement" data-toggle="modal" href="https://hpdpmetricsuat.ciostage.accenture.com/#" title="Data Privacy Statement (Open a Popup)">Data Privacy Statement</a>&nbsp;|&nbsp;
+        <a aria-label="SiteMap (Open a Popup)" class="footer-linkcolor " target="_self" title="SiteMap (Open a Popup)" href="https://mywizardnextgen.ciostage.accenture.com/SiteMap">SiteMap</a>
+    </footer>
+</div>
+    
+    
+
+
+
+    <div class="modal fade" data-backdrop="static" data-keyboard="false" id="sessiontimeoutModal" role="dialog" tabindex="0">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="height:45px">
+
+                    <h2 class="modal-title">Your Session is about to expire!</h2>
+                </div>
+                <div class="modal-body">
+                    <div>Your session will expire in <strong id="countdown"></strong> mins seconds due to inactivity.</div>
+                    <br>
+                    <div>Do you want to continue your session?</div>
+                </div>
+                <div class="modal-footer">
+
+                    <button class="btn btn-primary">Yes, Keep Working </button>
+                    <button class="btn btn-primary " data-dismiss="modal" type="button">No, Logout</button>
+                    <input id="IsClearTimer" type="hidden" value="IsClearTimer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div aria-haspopup="true" aria-label="Terms of Use" class="modal" data-backdrop="false" data-keyboard="true" id="Termsofusepopupfooter" role="dialog" tabindex="0">
+            <div class="modal-dialog-wrap" style="text-align:center;">
+                <div class="modal-dialog modal-drag">
+                    <div class="modal-content" style="width:100%">
+                        <div class="modal-header">
+                            <button aria-hidden="true" aria-label="Close" class="close" data-dismiss="modal" id="termsofuse_popup_close_footer" type="button">×</button>
+                            <h3 class="modal-title">Terms Of Use</h3>
+                        </div>
+                        <div class="modal-body termsofuse-scroll">
+
+                            <div style="width:100%; height:100%; font-size:11px; font-family:Arial; line-height:1.42857; overflow:auto;">
+
+                                <div style="font-size:12px; color:black; font-weight:700; text-align:center;">
+                                    myWizard Privacy Statement Supplement
+                                </div>
+                                <div style="font-weight:500; text-align:left; padding:10px 15px 20px;">
+                                    Effective Date: 1.29.2016
+                                    <br>
+                                    <br>
+                                    The Accenture Portal Privacy Statement is supplemented as follows:
+                                    <br>
+                                    <br>
+                                    When using the myWizard, please be aware that your information will be collected in accordance the Portal Privacy Statement and monitored as described in the below myWizard Terms of Use, updated 1.29.2016.
+                                    <br>
+                                    <br>
+                                </div>
+                                <div style="font-size:12px; color:black; font-weight:700; text-align:center;">
+                                    Terms of Use for Accenture Internal Online Publishing
+                                </div>
+
+                                <div style="font-weight:500; text-align:left; padding:10px 15px 20px;">
+                                    Effective 1.29.2016
+                                    <br>
+                                    <br>
+                                    PLEASE READ
+                                    <br>
+                                    <br>
+                                    Your access to and use of this site is subject to the following terms and conditions “Terms of Use” contained within this document, and all applicable laws. By accessing and using this site,
+                                    <span style="font-size:12px; color:black; font-weight:700;">
+                                        you accept
+                                    </span>
+                                    the following terms and conditions, without limitation or qualification:
+                                    <br>
+                                    <br>
+
+                                    <span style="font-size:11px; color:black; font-weight:700;">Conduct.</span>
+                                    Your conduct relating to uploading and downloading functions on the myWizard should comply with these Terms of Use as well as Accenture Policies and our Code of Business Ethics (COBE). Policies with particular relevance include
+                                    <a aria-label="Policy 57(Open a new window)" class="link-color-cop" href="https://policies.accenture.com/pages/0001-0100/0057.aspx" style="font-weight:700; color:blue;" target="_blank" title="Policy 57(Open a new window)">Policy 57</a>
+                                    – Acceptable Use of Information,
+                                    Devices, and Technology,
+                                    <a aria-label="Policy 69(Open a new window)" class="link-color-cop" href="https://policies.accenture.com/Pages/0001-0100/0069.aspx" style="font-weight:700; color:blue;" target="_blank" title="Policy 69(Open a new window)">Policy 69</a>
+                                    – Confidentiality,
+                                    <a aria-label="Policy 1001(Open a new window)" class="link-color-cop" href="https://policies.accenture.com/policy/1001" style="font-weight:700; color:blue;" target="_blank" title="Policy 1001(Open a new window)">Policy 1001</a>
+                                    – Respecting the Individual, and
+                                    <a aria-label="Policy 1461(Open a new window)" class="link-color-cop" href="https://policies.accenture.com/Pages/1401-1500/1461.aspx" style="font-weight:700; color:blue;" target="_blank" title="Policy 1461(Open a new window)">Policy 1461</a>
+                                    – Social Media.
+                                    <br>
+                                    <br>
+                                    <span style="font-size:12px; color:black; font-weight:700;">
+                                        Ownership and Intellectual Property.
+                                    </span>
+                                    Respect the intellectual property rights of others by first ensuring that prior to copying any content found online, you have a legal right to do so.
+                                    <span style="font-size:11px; color:black; font-weight:700;">References:</span>
+                                    <a aria-label="Policy 57(Open a new window)" class="link-color-cop" href="https://policies.accenture.com/policy/0057" style="font-weight:700; color:blue;" target="_blank" title="Policy 57(Open a new window)">Policy 57</a>
+                                    – Acceptable Use of Information, Devices, and Technology,
+                                    <a aria-label="Policy 1461(Open a new window)" class="link-color-cop" href="https://policies.accenture.com/policy/1461" style="font-weight:700; color:blue;" target="_blank" title="Policy 1461(Open a new window)">Policy 1461</a>
+                                    – Social Media, and Accenture’s
+                                    <a aria-label="Intellectual Property site (Open a new window)" class="link-color-cop" href="https://policies.accenture.com/policy/0091" style="font-weight:700; color:blue;" target="_blank" title="Intellectual Property site (Open a new window)">Intellectual Property site</a>
+                                    <br>
+                                    <br>
+                                    The information provided on this site is free of charge and for informational purposes and internal use only. Unless otherwise stated, the contents of this site including, but not limited to, the text and images contained herein and their arrangement are the property of Accenture. All trademarks used or referred to in this website are the property of their respective owners
+                                    <br>
+                                    <br>
+                                    Nothing contained in this site shall be construed as conferring by implication, estoppel, or otherwise, any license or right to any copyright, patent, trademark or other proprietary interest of Accenture or any third party.
+                                    <span style="font-size:11px; color:black; font-weight:700;">
+                                        This site and the content provided in this site, including, but not limited to, graphic images, audio, video, html code, buttons, and text, may not be copied, reproduced, republished, uploaded, posted, transmitted, or distributed in any way, without the prior written consent of Accenture, except that you may download, display, and print one copy of the materials on any single computer solely for your personal, non-commercial use, provided that you do not modify the material in any way and you keep intact all copyright, trademark, and other proprietary notices.
+                                    </span>
+                                    <br>
+                                    Links on this site may lead to services or sites not operated by Accenture. No judgment or warranty is made with respect to such other services or sites and Accenture takes no responsibility for such other sites or services. A link to another site or service is not an endorsement of that site or service. Any use you make of the information provided on this site, or any site or service linked to by this site, is at your own risk.
+                                    <br>
+                                    <br>
+
+                                    <span style="font-size:11px; color:black; font-weight:700;">
+                                        Warranties.
+                                    </span>
+                                    This site and its contents are provided “as is” and Accenture makes no representation or warranty of any kind with respect to this site or any site or service accessible through this site. Accenture expressly disclaims all express and implied warranties including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement. In no event will Accenture be liable to any party for any direct, indirect, incidental, special, exemplary, consequential, or other damages (including, but not limited to, lost profits, business interruption, loss of programs or data) without regard to the form of action and whether in contract, tort, negligence, strict liability, or otherwise, arising out of or in connection with this site, any content on or accessed through this site or any site service linked to, or any copying, displaying, or use thereof.
+                                    <br>
+                                    <br>
+                                    <span style="font-size:11px; color:black; font-weight:700;">
+                                        Legal Proceedings.
+                                    </span>
+                                    Accenture maintains this site in Illinois, U.S.A. and you agree that these terms of use and any legal action or proceeding relating to this site shall be governed by the laws of the State of Illinois without reference to its choice of law rules. If you attempt to bring any legal proceedings against Accenture you specifically acknowledge that Accenture is free to choose the jurisdiction of our preference as to where such action against us may be held. As you have agreed by using this site to choose the laws of the State of Illinois to govern any such proceedings, we will probably choose to defend any such action in Illinois and we can make this decision entirely as it suits us, without regard to where in the world you are located, or from where in the world you visited this site.
+
+                                    <span style="font-size:11px; color:black; font-weight:700;">
+                                        You are responsible for complying with the laws of the jurisdiction from which you are accessing this site and you agree that you will not access or use the information on this site in violation of such laws.
+                                    </span>
+                                    Unless expressly stated otherwise herein, any information submitted by you through this site shall be deemed non-confidential and non-proprietary
+                                    <span style="font-size:11px; color:black; font-weight:700;">
+                                        You represent that you have the lawful right to submit and/or download such information and agree that you will not submit and or download any information unless you are legally entitled to do so. References:
+                                    </span>
+                                    <a aria-label="Policy 69(Open a new window)" class="link-color-cop" href="https://policies.accenture.com/Pages/0001-0100/0069.aspx" style="font-weight:700; color:blue;" target="_blank" title="Policy 69(Open a new window)">Policy 69</a>
+                                    – Confidentiality, and Accenture’s
+                                    <a aria-label="Data Classification and Protection standards (Open a new window)" class="link-color-cop" href="https://go.accenture.com/DataClassification" style="font-weight:700; color:blue;" target="_blank" title="Data Classification and Protection standards (Open a new window)">Data Classification and Protection standards</a>
+                                    <br>
+                                    <br>
+                                    <span style="font-size:11px; color:black; font-weight:700;">
+                                        Monitoring.
+                                    </span>
+                                    As permitted by applicable law, Accenture reserves the right to monitor activity on its myWizard. Such monitoring may include a review of the volumes and frequency of materials being uploaded or downloaded, and a review of the content reported as inappropriate by other employees. Should it be determined that the volume of uploading or downloading substantially exceeds that of the average user, then there may be a further review of the nature and substance of the content and its relation to the role of the employee and myWizard user.
+                                    <br>
+                                    <br>
+                                    If you see content on Accenture’s myWizard that violates Accenture Policies or our COBE, please report it via a provided flagging mechanism on the specific platform if it exists, or to your supervisor, career counselor, anyone in Accenture Leadership, Legal or Human Resources. If you are uncomfortable using any of these channels, please seek additional direction on how to report violations from
+                                    <a aria-label="Policy 1000 – Raising Legal and Ethics Issues and Prohibiting Retaliation. (Open a new window)" class="link-color-cop" href="https://policies.accenture.com/Pages/0901-1000/1000.aspx" style="font-weight:700; color:blue;" target="_blank" title="Policy 1000 – Raising Legal and Ethics Issues and Prohibiting Retaliation. (Open a new window)">Policy 1000 – Raising Legal and Ethics Issues and Prohibiting Retaliation.</a>
+                                    <br>
+                                    <br>
+                                    <span style="font-size:11px; color:black; font-weight:700;">
+                                        Consequences.
+                                    </span>
+                                    . Violations of Accenture Policies or these Terms of Use may result in appropriate, lawful discipline, up to and including termination of employment. Additionally, for non-employees, Accenture may choose to sever its relationship or revoke the credentials of the user for violations of these Terms of Use. No provision of these Terms of Use, however, shall be interpreted or applied in a manner that would interfere with any employee rights that are protected by applicable laws or regulations.
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <span onfocus="document.getElementById(&#39;termsofuse_popup_close_footer&#39;).focus();" tabindex="0"> </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal" data-backdrop="false" data-keyboard="false" id="dataPrivacyStatement" tabindex="0">
+            <div class="modal-dialog-wrap">
+                <div class="modal-dialog modal-DataPrivacyBodyWidth">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button aria-hidden="true" aria-label="Close" class="close" data-dismiss="modal" type="button">×</button>
+                            <h3 class="modal-title">Data Privacy Statement</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>Accenture is committed to keeping your personal data secure, and processing it in accordance with, applicable data protection laws and our internal policies, including <a aria-label="Accenture’s Global Data Privacy Policy 0090 (Open a new window)" class="link-dp-colorfix" href="https://policies.accenture.com/policy/0090" target="_blank" title="Accenture’s Global Data Privacy Policy 0090 (Open a new window)">Accenture’s Global Data Privacy Policy 0090.</a></p>
+
+                            <p>Please ensure that the harvesting of data and its usage for Analytics, reporting in myWizard, has been approved by the client.</p>
+
+                            <p>Do not include yours/other’s personal, health, financial or sensitive personal data in free form text fields (e.g. “Description”), or upload screen shots containing personal data. If there is a need to mask personal information, please use the <a aria-label="Utility(Open a new window)" class="link-dp-colorfix" href="https://alm.accenture.com/wiki/display/MYW/Data+Masking+in+Manual+Uploads" target="_blank" title="Utility(Open a new window)">Utility</a> to do so before uploading the excel template.</p>
+
+                            <p>By uploading, you consent that you are conforming to the above.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Anomalies Detected</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modelbody">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No, Data Entered is Correct.</button>
+          <button type="button" class="btn btn-primary">Yes, let me recheck the data</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div></mass-ui>
+    
+    <div id="mypanel">
+<div id="outlier-section">
+        <h3>Potential Anomalies Detected</h3>
+       
+        <div>Below measures seem to have suspicious data entry since their calculated metric values are outside of normal range. Please validate once before submission.
+        </div>
+        <div>
+        <ul id="measures">
+            <li>test</li>
+        </ul>
+    </div>
+</div>
+        <h3>Comparison to Baseline Data
+        </h3>
+        <div class="row">
+            <!-- <canvas id="myChart" width="350" height="250"></canvas> -->
+            <div id="container1" style="height:36px;width:350px;"></div> 
+<div id="container2" style="height:36px;width:350px;"></div>
+<div id="container3" style="height:36px;width:350px;"></div>
+<div id="container4" style="height:36px;width:350px;"></div>
+<div id="container5" style="height:36px;width:350px;"></div>
+<div id="container6" style="height:36px;width:350px;"></div>
+<div id="container7" style="height:36px;width:350px;"></div>
+        </div>
+        
+        <div id="anomaly-section">
+        <h3>AI based Insights</h3>
+        
+        <div>
+            <ul id="anomaly">
+                <li>test</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div>
+        <h4>Was this useful?</h4>
+        
+        <div class="row"> 
+            <span class="col auto"></div><input type="button" value="No" class="btn" > </span>
+            <span class="col auto"><input type="button" value="Yes" class="btn btn-primary" ></span>
+    </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static',filename='Metric Submission - MyWizard_files/bundlePolyfill.js.download')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='Metric Submission - MyWizard_files/bundleOtherJs.js.download')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='Metric Submission - MyWizard_files/bundleAngular.js.download')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='Metric Submission - MyWizard_files/bundleApp.js.download')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='Metric Submission - MyWizard_files/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='Metric Submission - MyWizard_files/bootstrap.min.js')}}"></script>
+    <link href="{{ url_for('static',filename='Metric Submission - MyWizard_files/bootstrap.min.css')}}" rel="stylesheet">
+   <!-- added extra for overlay starts -->
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="{{ url_for('static',filename='Metric Submission - MyWizard_files/jquery.slidein.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='Metric Submission - MyWizard_files/sample-slidein.css')}}" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='Metric Submission - MyWizard_files/jquery.slidein.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+      <!-- added extra for overlay ends -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" ></script> -->
+    <!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+<!-- jQuery library -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+<!-- Latest compiled JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <!-- target vs actual start   -->
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/highcharts-more.js"></script>
+  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+<!-- target vs actual end   -->
+    <script type="text/javascript">
+
+function showPanel(outlier, anomaly)
+{
+    if(outlier["length"]==0 && anomaly=="")
+    {
+       $("#outlier-section").hide();
+       $("#anomaly-section").hide();
+       
+       
+    }
+    else if(outlier["length"]==0)
+    {
+        $("#outlier-section").hide();
+    }
+    else if(anomaly=="")
+    {
+        $("#anomaly-section").hide();
+    }
+
+    $("#mypanel").slidein({
+
+// panel width or height depending on where its docked
+breadth: 450,       
+
+// the curve of the handle
+curve:10,           
+
+// panel shuts and won't open any more
+disabled:false,     
+
+// default to left
+dock: "right",       
+
+// panel and grab handle is hidden
+hidden:false,       
+
+// slide in panel opacity
+opacity: 1,         
+
+// true is open, false is closed
+open: true,         
+
+// how far the panel peeks into the main window
+peek: 10,           
+
+// percentage position of the handle, 0 = top, 50 = middle, 100 = bottom
+position:10,        
+
+// text to show in the grab handle
+prompt: "",         
+
+// animate speed for opening and closing in millisecs
+speed: 400,         
+
+// what actions open the panel
+toOpen: "click",    
+
+// what actions close the panel
+toClose: "click"    
+
+}); 
+$("#measures").empty();
+$("#anomaly").empty();
+//$("#myChart").empty();
+for(i=0;i<outlier["length"];i++)
+    {
+       
+        $("#measures").append("<li>"+outlier[i]+"</li>")
+        $("#outlier-section").show();
+        //drawChart();
+        drawChart1();
+    }
+    for(i=0;i<anomaly["length"];i++)
+    {
+       
+        $("#anomaly").append("<li>"+anomaly[i]+"</li>")
+        $("#anomaly-section").show();
+        //drawChart();
+        drawChart1();
+    }
+    // if(anomaly!="")
+    // {
+      
+    //     $("#anomaly").append("<li>"+anomaly+"</li>")
+    //     $("#anomaly-section").show();
+    //    // drawChart();
+    //    drawChart1();
+    // }
+}
+
+  function calculate(el,id)
+  {
+   // showPanel();
+    //$("#mypanel").slidein();
+
+      //alert(el.value )
+      //metricId=el.id.replace("ms","mt");
+     // document.getElementById(metricId).innerHTML=el.value * 100;
+
+      //if(el.id.contains('1'))
+      
+      //send()
+
+      switch (id) {
+  case 1:    
+  case 2:
+   //if(el.value!='' && el.value!='')
+   if(document.getElementById("msID1").value!=''&&document.getElementById("msID2").value!='')
+   {
+    document.getElementById("mtID1").innerHTML=parseFloat((document.getElementById("msID1").value/document.getElementById("msID2").value )*100).toFixed(2);
+   }
+    break;
+  case 3:
+  if(document.getElementById("msID3").value!='')
+   {
+    document.getElementById("mtID2").innerHTML=document.getElementById("msID3").value;
+   }
+    break;
+  case 4:
+  case 5:
+  if(document.getElementById("msID4").value!=''&&document.getElementById("msID5").value!='')
+   {
+    document.getElementById("mtID3").innerHTML=(parseInt(document.getElementById("msID4").value)+parseInt(document.getElementById("msID5").value ));
+   }
+    break;
+  case 6:
+  case 7:
+  if(document.getElementById("msID6").value!=''&&document.getElementById("msID7").value!='')
+   {
+    document.getElementById("mtID4").innerHTML=(parseInt(document.getElementById("msID6").value)+parseInt(document.getElementById("msID7").value ));
+   }
+  break;
+  case 8:
+  case 9:
+  if(document.getElementById("msID8").value!=''&&document.getElementById("msID9").value!='')
+   {
+    document.getElementById("mtID5").innerHTML=(parseInt(document.getElementById("msID8").value)+parseInt(document.getElementById("msID9").value ));
+   }
+  break;
+  case 10:
+  case 11:
+  if(document.getElementById("msID10").value!=''&&document.getElementById("msID11").value!='')
+   {
+    document.getElementById("mtID6").innerHTML=(parseInt(document.getElementById("msID10").value)+parseInt(document.getElementById("msID11").value ));
+   }
+  break;
+  case 12:
+  if(document.getElementById("msID12").value!='')
+   {
+    document.getElementById("mtID7").innerHTML=document.getElementById("msID12").value;
+   }
+    break;
+}
+send()
+  }
+  var metric;
+  function send() {
+    metric = {
+            SLA: parseFloat(document.getElementById("mtID1").innerHTML),
+            Ageing: parseFloat(document.getElementById("mtID2").innerHTML),
+            AREI: parseFloat(document.getElementById("mtID3").innerHTML),
+            AREP: parseFloat(document.getElementById("mtID4").innerHTML),
+            BPEI: parseFloat(document.getElementById("mtID5").innerHTML),
+            BPEP: parseFloat(document.getElementById("mtID6").innerHTML),
+            DD: parseFloat(document.getElementById("mtID7").innerHTML),
+        }
+        
+       if(document.getElementById("mtID1").innerHTML.trim()!=''&&document.getElementById("mtID2").innerHTML.trim()!=''
+       &&document.getElementById("mtID3").innerHTML.trim()!=''&&document.getElementById("mtID4").innerHTML.trim()!=''
+       &&document.getElementById("mtID5").innerHTML.trim()!=''&&document.getElementById("mtID6").innerHTML.trim()!=''
+       &&document.getElementById("mtID7").innerHTML.trim()!='')
+{
+        $.ajax({
+            //url: 'http://127.0.0.1:5000/predict_api',
+            url: 'https://gov-anomaly-detection.azurewebsites.net/predict_api',
+            type: 'post',
+            dataType: 'json',
+            contentType: 'application/json',
+            success: function (data) {
+              //alert(data);
+           
+            //  $("#modelbody").html(data.model1 +"<br><br><br>"+ data.model2+"<br><br><br>"+ "Do you wish to make the changes to your submission as suggested?");
+             //$('#exampleModal').modal('show');
+             console.log(data.outlier);
+             console.log(data.anomaly)
+             showPanel(data.outlier, data.anomaly);
+            },
+            error: function (err) {
+              alert('Something went wrong, Please refresh the page and try if the problem still exists please contact support team');
+           
+            },
+            data: JSON.stringify(metric)
+        });
+    }
+    
+    }
+
+    function drawChart1()
+    {
+        //-------------------------------------------------------
+Highcharts.Renderer.prototype.symbols.line = function(x, y, width, height) {
+    return ['M',x ,y + width / 2,'L',x+height,y + width / 2];
+};
+//-------------------------------------------------------
+Highcharts.setOptions({
+    chart:{
+        type:'bar',
+        margin:[5,15,10,100],
+    },
+    credits:{enabled:false},
+    exporting:{enabled:false},
+    legend:{enabled:false},
+    title:{text:''},
+    xAxis:{
+        tickLength:0,
+        lineColor:'#999',
+        lineWidth:1,
+        labels:{style:{fontWeight:'bold'}}        
+    },
+    yAxis:{
+        min:0,
+        minPadding:0,
+        maxPadding:0,
+        tickColor:'#ccc',
+        tickWidth:1,
+        tickLength:3,
+        gridLineWidth:0,
+        endOnTick:true,
+        title:{text: ''},
+        labels:{
+            y:10,
+            style:{
+                fontSize:'8px'
+            },
+            formatter:function(){
+                if (this.isLast){
+                    return this.value + ' %';
+                }
+                else{
+                    return this.value;
+                }
+            }
+        }
+    },
+    tooltip:{
+        enabled:true,
+        backgroundColor:'rgba(255, 255, 255, .85)',
+        borderWidth:0,
+        shadow:true,
+        style:{fontSize:'10px',padding:2},
+        formatter:function() {
+           return this.series.name + ": <strong>" + Highcharts.numberFormat(this.y,2) + "</strong>";
+        }
+    },
+    plotOptions:{
+        bar:{
+            color:'#000',
+            shadow:false,
+            borderWidth:0,
+        },
+        scatter:{
+            marker:{
+                symbol:'line',
+                lineWidth:3,
+                radius:8,
+                lineColor:'#000'
+            }
+        }
+    }
+});
+
+//-------------------------------------------------------
+var chart1 = new Highcharts.Chart({
+    chart:{renderTo:'container1'},
+    xAxis:{categories:['SLA']},
+    yAxis:{
+        max:100,
+        labels:{y:10,style:{fontSize:'8px'}, formatter:function(){return this.value;}},   
+        plotBands:[{from:0,to:70,color: 'rgba(103,103,103,.35)'},
+                   {from:70,to:85,color: 'rgba(153,153,153,.35)'},
+                   {from:85,to:100,color: 'rgba(204,204,204,.35)'}]
+    },
+    series:[{name:'SLA',pointWidth:10,data:[metric.SLA]},
+            {name:'Standard',type: 'scatter',data:[100],}]
+});
+
+//-------------------------------------------------------
+var chart2 = new Highcharts.Chart({
+    chart:{renderTo:'container2'},
+    xAxis:{categories:['Ageing']},
+    yAxis:{
+        max:50,
+        labels:{y:10,style:{fontSize:'8px'}, formatter:function(){return this.value;}},     
+        plotBands:[{from:0,to:25,color: 'rgba(103,103,103,.35)'},
+                   {from:25,to:40,color: 'rgba(153,153,153,.35)'},
+                   {from:40,to:50,color: 'rgba(204,204,204,.35)'}]
+    },
+    series:[{name:'Ageing',pointWidth:10,data:[metric.Ageing]},
+            {name:'Standard',type: 'scatter',data:[0],}]
+});
+
+//-------------------------------------------------------
+var chart3 = new Highcharts.Chart({
+    chart:{renderTo:'container3'},
+    xAxis:{categories:['ARE-I']},
+    yAxis:{
+        max:10,
+        labels:{y:10,style:{fontSize:'8px'}, formatter:function(){return this.value;}},      
+        plotBands:[{from:0,to:5,color: 'rgba(103,103,103,.35)'},
+                   {from:5,to:7.5,color: 'rgba(153,153,153,.35)'},
+                   {from:7.5,to:10,color: 'rgba(204,204,204,.35)'}]
+    },
+    series:[{name:'ARE-I',pointWidth:10,data:[metric.AREI]},
+            {name:'Standard',type: 'scatter',data:[6.2],}]
+});
+
+//-------------------------------------------------------
+var chart4 = new Highcharts.Chart({
+    chart:{renderTo:'container4'},
+    xAxis:{categories:['ARE-P']},
+    yAxis:{
+        max:20,
+        labels:{y:10,style:{fontSize:'8px'}, formatter:function(){return this.value;}},    
+        plotBands:[{from:0,to:10,color: 'rgba(103,103,103,.35)'},
+                   {from:10,to:15,color: 'rgba(153,153,153,.35)'},
+                   {from:15,to:20,color: 'rgba(204,204,204,.35)'}]
+    },
+    series:[{name:'ARE-P',pointWidth:10,data:[metric.AREP]},
+            {name:'Standard',type: 'scatter',data:[11.9],}]
+});
+
+//-------------------------------------------------------
+var chart5 = new Highcharts.Chart({
+    chart:{renderTo:'container5'},
+    xAxis:{categories:['BPE-I']},
+    yAxis:{
+        max:10,
+        tickInterval:1,
+        labels:{y:10,style:{fontSize:'8px'},        formatter:function(){return this.value;}},   
+        plotBands:[{from:0,to:5,color: 'rgba(103,103,103,.35)'},
+                   {from:5,to:8,color: 'rgba(153,153,153,.35)'},
+                   {from:8,to:10,color: 'rgba(204,204,204,.35)'}]
+    },
+    series:[{name:'BPEI',pointWidth:10,data:[metric.BPEI]},
+            {name:'Standard',type: 'scatter',data:[1.3],}]
+});
+//-------------------------------------------------------
+
+//-------------------------------------------------------
+var chart5 = new Highcharts.Chart({
+    chart:{renderTo:'container6'},
+    xAxis:{categories:['BPE-P']},
+    yAxis:{
+        max:10,
+        tickInterval:1,
+        labels:{y:10,style:{fontSize:'8px'},        formatter:function(){return this.value;}},   
+        plotBands:[{from:0,to:5,color: 'rgba(103,103,103,.35)'},
+                   {from:5,to:8,color: 'rgba(153,153,153,.35)'},
+                   {from:8,to:10,color: 'rgba(204,204,204,.35)'}]
+    },
+    series:[{name:'BPEP',pointWidth:10,data:[metric.BPEP]},
+            {name:'Standard',type: 'scatter',data:[1.2],}]
+});
+//-------------------------------------------------------
+
+//-------------------------------------------------------
+var chart5 = new Highcharts.Chart({
+    chart:{renderTo:'container7'},
+    xAxis:{categories:['DD']},
+    yAxis:{
+        max:10,
+        tickInterval:1,
+        labels:{y:10,style:{fontSize:'8px'},        formatter:function(){return this.value;}},   
+        plotBands:[{from:0,to:5,color: 'rgba(103,103,103,.35)'},
+                   {from:5,to:8,color: 'rgba(153,153,153,.35)'},
+                   {from:8,to:10,color: 'rgba(204,204,204,.35)'}]
+    },
+    series:[{name:'DD',pointWidth:10,data:[metric.DD]},
+            {name:'Standard',type: 'scatter',data:[1.7],}]
+});
+//-------------------------------------------------------
+
+    }
+   function drawChart()
+   {
+    var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["SLA", "Ageing", "ARE-I", "ARE-P", "BPE-I", "BPE-P", "DD"],
+    datasets: [{
+      label: 'Metric',
+      legend: {
+        display: false
+    },
+      data: [metric.SLA, metric.Ageing, metric.AREI, metric.AREP, metric.BPEI, metric.BPEP, metric.DD],
+    //   backgroundColor: [
+    //     'rgba(255, 99, 132, 0.2)',
+    //     'rgba(54, 162, 235, 0.2)',
+    //     'rgba(255, 206, 86, 0.2)',
+    //     'rgba(75, 192, 192, 0.2)',
+    //     'rgba(153, 102, 255, 0.2)',
+    //     'rgba(255, 159, 64, 0.2)',
+    //     'rgba(255, 99, 132, 0.2)',
+       
+    //   ],
+    //   borderColor: [
+    //     'rgba(255,99,132,1)',
+    //     'rgba(54, 162, 235, 1)',
+    //     'rgba(255, 206, 86, 1)',
+    //     'rgba(75, 192, 192, 1)',
+    //     'rgba(153, 102, 255, 1)',
+    //     'rgba(255, 159, 64, 1)',
+    //     'rgba(255,99,132,1)',
+        
+    //   ],
+    backgroundColor:['blue','blue','blue','blue','blue','blue','blue'],
+    borderColor:['black','black','black','black','black','black','black'],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    responsive: false,
+    scales: {
+      xAxes: [{
+        ticks: {
+          maxRotation: 90,
+          minRotation: 80
+        },
+          gridLines: {
+          offsetGridLines: true // à rajouter
+        }
+      },
+      {
+        position: "top",
+        ticks: {
+          maxRotation: 90,
+          minRotation: 80
+        },
+        gridLines: {
+          offsetGridLines: true // et matcher pareil ici
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  }
+});
+   }
+    </script>
+
+
+ <object id="__symantecPKIClientMessenger" data-supports-flavor-configuration="true" data-extension-version="0.5.0.109" style="display: none;"></object><span id="__symantecPKIClientDetector" style="display: none;">__PRESENT</span><iframe id="adalRenewFramef8b39e8b-dc2c-4ac8-9ede-11ab86754392" aria-hidden="true" src="./Metric Submission - MyWizard_files/authorize.html" style="visibility: hidden; position: absolute; height: 0px; width: 0px;"></iframe></body></html>
