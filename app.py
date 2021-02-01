@@ -4,13 +4,17 @@ import pandas as pd
 import numpy as np
 import scipy
 from scipy.sparse import csr_matrix
+import requests
+import json
+import math
 
 
 app = Flask(__name__)
-model = pickle.load(open('Anomaly_Detection_model.pkl', 'rb'))
+#model = pickle.load(open('Anomaly_Detection_model.pkl', 'rb'))
 knn_model = pickle.load(open('Anomaly_Detection_model_knn_new.pkl', 'rb'))
 df = pd.read_csv('Master Lookup AM Anomalies v2.0.csv',delimiter=',',header='infer')
-   
+scoring_uri='http://9d08086f-0622-4888-b345-5cad6ac1500b.eastus2.azurecontainer.io/score'
+
 
 @app.route('/')
 def home():
@@ -27,10 +31,10 @@ def predict():
     lst=[]
     for x in request.form.values():
        lst.append(float(x))
-    
-    
-    #input='(AO)Percentage SLAs Met={}, Ageing={}, Average Resolution Effort - Incidents={},      #Average Resolution Effort - Problems={}, Backlog Processing Efficiency - #Incidents={},Backlog Processing Efficiency - Problems={}, Delivered #Defects={}'.format(lst[0], lst[1],lst[2],lst[3],lst[4],lst[5],lst[6])            
-    
+
+
+    #input='(AO)Percentage SLAs Met={}, Ageing={}, Average Resolution Effort - Incidents={},      #Average Resolution Effort - Problems={}, Backlog Processing Efficiency - #Incidents={},Backlog Processing Efficiency - Problems={}, Delivered #Defects={}'.format(lst[0], lst[1],lst[2],lst[3],lst[4],lst[5],lst[6])
+
     #result=model.predict(csr_matrix([100,0,1144,1144,0.17,0.17,179]))
     result=model.predict(csr_matrix(lst))
     resultnew=pd.DataFrame(result.todense())
@@ -41,10 +45,10 @@ def predict():
     anomaly=[]
     for i in list(predictions.index.values):
         anomaly.append(Metrics(i))
-    
-    
+
+
     finalResult=''
-    for x in range(len(anomaly)): 
+    for x in range(len(anomaly)):
         finalResult=finalResult+anomaly[x]+' ,'
     print('length',len(anomaly))
     if(len(anomaly)>1):
@@ -54,7 +58,7 @@ def predict():
     else:
         text='No Outliers detected.'
     return render_template('index.html',  prediction_text=text)
-    
+
 def Metrics(i):
     switcher={
                 0:'SLA',
@@ -64,7 +68,7 @@ def Metrics(i):
                 4:'BPEI',
                 5:'BPEP',
                 6:'DD'
-                
+
              }
     return switcher.get(i,"Invalid")
 
@@ -77,10 +81,29 @@ def Measures(i):
                 'BPEI':'Resolved Incidents P1,Resolved Incidents P2',
                 'BPEP':'Resolved Problem Requests P1,Resolved Problem Requests P2',
                 'DD':'Number of post delivery defects'
-                
+
              }
     return switcher.get(i,"Invalid")
-    
+def outlier(lst):
+    print('before call',lst)
+    data = {"data":
+        [
+            lst
+        ]
+        }
+    # Convert to JSON string
+    input_data = json.dumps(data)
+    print('input_data',input_data)
+    # Set the content type
+    headers = {'Content-Type': 'application/json'}
+    # If authentication is enabled, set the authorization header
+    #headers['Authorization'] = f'Bearer {key}'
+
+    # Make the request and display the response
+    resp = requests.post(scoring_uri, input_data, headers=headers)
+    print('resp.text',resp.text)
+    return resp.text
+
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
     '''
@@ -96,7 +119,19 @@ def predict_api():
     lst.append(float(content['BPEI']))
     lst.append(float(content['BPEP']))
     lst.append(float(content['DD']))
-    
+
+    result1=outlier(lst)
+    print('result1',result1=='[]')
+    print('result1 length',len(result1))
+    li=[]
+    if(result1!='[]'):
+        line = result1.replace('"', '')
+        line = line.replace('[', '')
+        line = line.replace(']', '')
+        li = list(line.split(","))
+        print(li)
+    '''
+    #commented for outlier detection load from api
     result=model.predict(csr_matrix(lst))
     resultnew=pd.DataFrame(result.todense())
     resultnew1=pd.DataFrame(resultnew.iloc[0])
@@ -106,14 +141,14 @@ def predict_api():
     anomaly=[]
     for i in list(predictions.index.values):
         anomaly.append(Metrics(i))
-    
+
     measures=[]
     for a in range(len(anomaly)):
         measures.append(Measures(anomaly[a]))
-        
+
 
     finalResult=''
-    for x in range(len(anomaly)): 
+    for x in range(len(anomaly)):
         finalResult=finalResult+anomaly[x]+' ,'
     print('length',len(anomaly))
     if(len(anomaly)>1):
@@ -124,7 +159,7 @@ def predict_api():
         text='No Outliers detected.'
 
     finalResult1=''
-    for x in range(len(measures)): 
+    for x in range(len(measures)):
         finalResult1=finalResult1+measures[x]+' ,'
     print('measures',len(measures))
     if(len(measures)>1):
@@ -133,34 +168,48 @@ def predict_api():
         text1='{} seem to have suspicious data entry since the value is outside of normal range. Please validate once before submission.'.format(finalResult1[:-1])
     else:
         text1='No Outliers detected.'
-    
+
     print('measures',text1)
+    '''
     #testing
-    nearest_neighbor=knn_model.kneighbors([lst], return_distance=True) 
+    print('knn starts')
+    nearest_neighbor=knn_model.kneighbors([lst], return_distance=True)
     #print(nearest_neighbor)
-    #df['warning_second_pass'] = df['warning_second_pass'].astype('str') 
-    #df['clusters_second_pass'] = df['clusters_second_pass'].astype('float') 
+    #df['warning_second_pass'] = df['warning_second_pass'].astype('str')
+    #df['clusters_second_pass'] = df['clusters_second_pass'].astype('float')
     features=df.columns[0:7]
     df_array=np.array(df)
 
-    result=np.unique(np.transpose(df_array[nearest_neighbor[1],7])) 
+    result=np.unique(np.transpose(df_array[nearest_neighbor[1],7]))
     print("result length", len(result))
+    print('result',result)
+
 
     rslt=[]
     for i in range(len(result)):
+        print('type',type(result[i]))
+        # if(math.isnan(result[i])):
+        #     break
         rslt.append(result[i])
         print(rslt)
+    if(rslt==[np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]):
+        rslt=[]
 
-    finalresult = {
-    "model1": text,
-    "model2":  rslt
-    
-     }
+    # finalresult = {
+    # "model1": text,
+    # "model2":  rslt
 
+    #  }
+
+    # finalresultNew = {
+    # "outlier": measures,
+    # "anomaly":  rslt
+
+    #  }
     finalresultNew = {
-    "outlier": measures,
+    "outlier": li,
     "anomaly":  rslt
-    
+
      }
 
     return jsonify(finalresultNew)
