@@ -13,6 +13,7 @@ app = Flask(__name__)
 #model = pickle.load(open('Anomaly_Detection_model.pkl', 'rb'))
 knn_model = pickle.load(open('Anomaly_Detection_model_knn_new.pkl', 'rb'))
 df = pd.read_csv('Master Lookup AM Anomalies v2.0.csv',delimiter=',',header='infer')
+df['ClusterCharacteristics'] = df['ClusterCharacteristics'].astype('str')
 scoring_uri='http://9d08086f-0622-4888-b345-5cad6ac1500b.eastus2.azurecontainer.io/score'
 
 
@@ -179,19 +180,20 @@ def predict_api():
     #df['clusters_second_pass'] = df['clusters_second_pass'].astype('float')
     features=df.columns[0:7]
     df_array=np.array(df)
-
+    print('knn continue')
     result=np.unique(np.transpose(df_array[nearest_neighbor[1],7]))
-    print("result length", len(result))
+    
     print('result',result)
+    print("result length", len(result))
 
 
     rslt=[]
     for i in range(len(result)):
         print('type',type(result[i]))
-        # if(math.isnan(result[i])):
-        #     break
-        rslt.append(result[i])
-        print(rslt)
+        print(result[i])
+        if(result[i]!='nan'):
+            rslt.append(result[i])
+            print(rslt)
     if(rslt==[np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]):
         rslt=[]
 
